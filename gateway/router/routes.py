@@ -12,6 +12,7 @@ from gateway.contracts.models import (
     ResponseEnvelope,
     ResponseError,
 )
+from gateway.schemas.request import GeneralRequest
 
 router = APIRouter()
 
@@ -40,26 +41,17 @@ async def list_modules():
     ]
     return ModulesListResponse(modules=modules)
 
-
 @router.post("/sort")
-async def sort_items(request: Request):
+async def sort_items(request: GeneralRequest):
     """Proxy request to the Go sort module."""
-    try:
-        body = await request.json()
-    except Exception:
-        raise HTTPException(status_code=400, detail="Invalid JSON body")
-
-    request_id = body.get("request_id", "")
-    if not request_id:
-        request_id = str(uuid.uuid4())
-
+    request_id = str(uuid.uuid4())
     sort_url = get_service_url("sort")
 
     envelope = RequestEnvelope(
         request_id=request_id,
-        module=body.get("module", "sort"),
-        version=body.get("version", "1.0.0"),
-        payload=body.get("payload", {}),
+        module="sort",
+        version="1.0.0",
+        payload=request.payload,
     )
 
     try:
