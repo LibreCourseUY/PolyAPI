@@ -1,4 +1,4 @@
-# PolyAPI — A Polyglot Open Source API
+# PolyAPI: A Polyglot Open Source API
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
@@ -138,12 +138,12 @@ make clean
 
 ## Documentation
 
-- [Architecture](docs/ARCHITECTURE.md) — System design and philosophy
-- [Contract Specification](docs/CONTRACT.md) — JSON contract format and error codes
-- [Contributing Guide](docs/CONTRIBUTING.md) — How to add new modules
-- [Sort Module](docs/modules/sort.md) — Sort module reference
-- [Contributor License Agreement](CLA.md) — Terms for contributing
+- [Architecture](docs/ARCHITECTURE.md): System design and philosophy
+- [Contract Specification](docs/CONTRACT.md): JSON contract format and error codes
+- [Contributing Guide](docs/CONTRIBUTING.md): How to add new modules
+- [Sort Module](docs/modules/sort.md): Sort module reference
+- [Contributor License Agreement](CLA.md): Terms for contributing
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License. see [LICENSE](LICENSE) for details.
