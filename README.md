@@ -30,7 +30,7 @@ Python was chosen as the gateway language for several important reasons:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        Client                                │
+│                        Client                               │
 └─────────────────────┬───────────────────────────────────────┘
                       │ HTTP + JSON
                       ▼
