@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PolyAPI Team">
+        <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/CONTRACT/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>PolyAPI JSON Contract Specification - PolyAPI Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PolyAPI Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting-started/installation/" class="dropdown-item">Installation</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/quickstart/" class="dropdown-item">Quick Start</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/architecture/" class="dropdown-item">Architecture Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Gateway</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gateway/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/api/" class="dropdown-item">API Reference</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Modules</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../modules/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../modules/creating/" class="dropdown-item">Creating a Module</a>
+</li>
+                                    
+<li>
+    <a href="../modules/sort/" class="dropdown-item">Sort Module</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Contract</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contract/json-contract/" class="dropdown-item">JSON Contract</a>
+</li>
+                                    
+<li>
+    <a href="../contract/error-codes/" class="dropdown-item">Error Codes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Development</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../development/testing/" class="dropdown-item">Testing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/CONTRACT.md" class="nav-link">Edit on LibreCourseUY/PolyAPI
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#polyapi-json-contract-specification" class="nav-link">PolyAPI JSON Contract Specification</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#request-envelope" class="nav-link">Request Envelope</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#response-envelope" class="nav-link">Response Envelope</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#error-code-registry" class="nav-link">Error Code Registry</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#versioning-policy" class="nav-link">Versioning Policy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#example-requestresponse-pairs" class="nav-link">Example Request/Response Pairs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#health-check-response" class="nav-link">Health Check Response</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="polyapi-json-contract-specification">PolyAPI JSON Contract Specification<a class="headerlink" href="#polyapi-json-contract-specification" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This document defines the JSON contract standard for all inter-module communication in PolyAPI. Every module, regardless of the programming language, must communicate with the FastAPI gateway exclusively through HTTP + JSON following this contract.</p>
+<h2 id="request-envelope">Request Envelope<a class="headerlink" href="#request-envelope" title="Permanent link">&para;</a></h2>
+<p>The request envelope is the format clients use to communicate with modules through the gateway.</p>
+<h3 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h3>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;uuid-v4-string&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;payload&quot;: { }
+}
+</code></pre>
+<h3 id="field-definitions">Field Definitions<a class="headerlink" href="#field-definitions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>request_id</code></td>
+<td>string</td>
+<td>No</td>
+<td>UUID v4 string. Auto-generated by gateway if not provided</td>
+</tr>
+<tr>
+<td><code>module</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Module identifier (e.g., "sort", "filter", "transform")</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Module version in semver format (e.g., "1.0.0")</td>
+</tr>
+<tr>
+<td><code>payload</code></td>
+<td>object</td>
+<td>Yes</td>
+<td>Module-specific payload data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="validation-rules">Validation Rules<a class="headerlink" href="#validation-rules" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>request_id</code>: Must be a valid UUID v4 if provided. If empty, gateway will inject one.</li>
+<li><code>module</code>: Must be a non-empty string matching a registered module.</li>
+<li><code>version</code>: Must follow semver format (MAJOR.MINOR.PATCH).</li>
+<li><code>payload</code>: Must be a valid JSON object. Content validation is module-specific.</li>
+</ul>
+<h2 id="response-envelope">Response Envelope<a class="headerlink" href="#response-envelope" title="Permanent link">&para;</a></h2>
+<p>All responses, whether success or error, must use the response envelope format.</p>
+<h3 id="success-response-schema">Success Response Schema<a class="headerlink" href="#success-response-schema" title="Permanent link">&para;</a></h3>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;uuid-v4-string&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: { },
+  &quot;error&quot;: null
+}
+</code></pre>
+<h3 id="error-response-schema">Error Response Schema<a class="headerlink" href="#error-response-schema" title="Permanent link">&para;</a></h3>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;uuid-v4-string&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;error&quot;,
+  &quot;data&quot;: null,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;INVALID_INPUT&quot;,
+    &quot;message&quot;: &quot;Human-readable explanation&quot;,
+    &quot;details&quot;: { }
+  }
+}
+</code></pre>
+<h3 id="field-definitions_1">Field Definitions<a class="headerlink" href="#field-definitions_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>request_id</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Matches the request_id from the incoming request</td>
+</tr>
+<tr>
+<td><code>module</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Module identifier</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Module version</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Either "success" or "error"</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>object/null</td>
+<td>Yes</td>
+<td>Response data on success, null on error</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>object/null</td>
+<td>Yes</td>
+<td>Error details on error, null on success</td>
+</tr>
+</tbody>
+</table>
+<h3 id="error-object">Error Object<a class="headerlink" href="#error-object" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>code</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Error code from the registry</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>string</td>
+<td>Yes</td>
+<td>Human-readable error message</td>
+</tr>
+<tr>
+<td><code>details</code></td>
+<td>object/null</td>
+<td>No</td>
+<td>Additional error context</td>
+</tr>
+</tbody>
+</table>
+<h2 id="error-code-registry">Error Code Registry<a class="headerlink" href="#error-code-registry" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>HTTP Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INVALID_INPUT</code></td>
+<td>Request payload failed validation</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>EMPTY_INPUT</code></td>
+<td>Required input array is empty</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>MIXED_TYPES</code></td>
+<td>Array contains mixed data types</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>INVALID_ORDER</code></td>
+<td>Invalid sort order value</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>UNSUPPORTED_TYPE</code></td>
+<td>Unsupported data type in array</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>MODULE_UNREACHABLE</code></td>
+<td>Module is not responding</td>
+<td>502</td>
+</tr>
+<tr>
+<td><code>CONTRACT_VIOLATION</code></td>
+<td>Response doesn't match contract</td>
+<td>500</td>
+</tr>
+<tr>
+<td><code>INVALID_JSON</code></td>
+<td>Malformed JSON in request</td>
+<td>400</td>
+</tr>
+<tr>
+<td><code>INVALID_METHOD</code></td>
+<td>Wrong HTTP method used</td>
+<td>405</td>
+</tr>
+<tr>
+<td><code>MODULE_ERROR</code></td>
+<td>Module returned an error</td>
+<td>502</td>
+</tr>
+</tbody>
+</table>
+<h2 id="versioning-policy">Versioning Policy<a class="headerlink" href="#versioning-policy" title="Permanent link">&para;</a></h2>
+<h3 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">&para;</a></h3>
+<p>PolyAPI follows <a href="https://semver.org/">Semantic Versioning 2.0.0</a>:</p>
+<ul>
+<li><strong>MAJOR</strong> (x.0.0): Breaking changes</li>
+<li><strong>MINOR</strong> (1.x.0): New features (backward compatible)</li>
+<li><strong>PATCH</strong> (1.0.x): Bug fixes</li>
+</ul>
+<h3 id="contract-evolution">Contract Evolution<a class="headerlink" href="#contract-evolution" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Backward-Compatible Changes</strong> (Minor version bump):</li>
+<li>Adding new optional fields</li>
+<li>Adding new error codes</li>
+<li>
+<p>Adding new modules</p>
+</li>
+<li>
+<p><strong>Breaking Changes</strong> (Major version bump):</p>
+</li>
+<li>Removing or renaming required fields</li>
+<li>Changing field types</li>
+<li>Changing enum values</li>
+<li>Removing error codes</li>
+</ol>
+<h3 id="module-version-support">Module Version Support<a class="headerlink" href="#module-version-support" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Gateway should support multiple versions of a module simultaneously</li>
+<li>Modules should maintain backward compatibility within major version</li>
+<li>Deprecation notices should be issued one minor version in advance</li>
+</ul>
+<h2 id="example-requestresponse-pairs">Example Request/Response Pairs<a class="headerlink" href="#example-requestresponse-pairs" title="Permanent link">&para;</a></h2>
+<h3 id="sort-module-string-sorting">Sort Module: String Sorting<a class="headerlink" href="#sort-module-string-sorting" title="Permanent link">&para;</a></h3>
+<p><strong>Request:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;payload&quot;: {
+    &quot;items&quot;: [&quot;banana&quot;, &quot;apple&quot;, &quot;cherry&quot;],
+    &quot;order&quot;: &quot;asc&quot;
+  }
+}
+</code></pre>
+<p><strong>Response:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;sorted&quot;: [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;],
+    &quot;item_type&quot;: &quot;string&quot;,
+    &quot;count&quot;: 3
+  },
+  &quot;error&quot;: null
+}
+</code></pre>
+<h3 id="sort-module-number-sorting-descending">Sort Module: Number Sorting (Descending)<a class="headerlink" href="#sort-module-number-sorting-descending" title="Permanent link">&para;</a></h3>
+<p><strong>Request:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;payload&quot;: {
+    &quot;items&quot;: [5, 2, 8, 1],
+    &quot;order&quot;: &quot;desc&quot;
+  }
+}
+</code></pre>
+<p><strong>Response:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;sorted&quot;: [8, 5, 2, 1],
+    &quot;item_type&quot;: &quot;number&quot;,
+    &quot;count&quot;: 4
+  },
+  &quot;error&quot;: null
+}
+</code></pre>
+<h3 id="error-empty-input">Error: Empty Input<a class="headerlink" href="#error-empty-input" title="Permanent link">&para;</a></h3>
+<p><strong>Request:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;payload&quot;: {
+    &quot;items&quot;: [],
+    &quot;order&quot;: &quot;asc&quot;
+  }
+}
+</code></pre>
+<p><strong>Response:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;error&quot;,
+  &quot;data&quot;: null,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;EMPTY_INPUT&quot;,
+    &quot;message&quot;: &quot;input array is empty&quot;,
+    &quot;details&quot;: null
+  }
+}
+</code></pre>
+<h3 id="error-mixed-types">Error: Mixed Types<a class="headerlink" href="#error-mixed-types" title="Permanent link">&para;</a></h3>
+<p><strong>Request:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440003&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;payload&quot;: {
+    &quot;items&quot;: [&quot;string&quot;, 123, &quot;another&quot;],
+    &quot;order&quot;: &quot;asc&quot;
+  }
+}
+</code></pre>
+<p><strong>Response:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440003&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;error&quot;,
+  &quot;data&quot;: null,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;MIXED_TYPES&quot;,
+    &quot;message&quot;: &quot;mixed types in array&quot;,
+    &quot;details&quot;: null
+  }
+}
+</code></pre>
+<h2 id="health-check-response">Health Check Response<a class="headerlink" href="#health-check-response" title="Permanent link">&para;</a></h2>
+<p>Modules must implement a health check endpoint that returns:</p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;ok&quot;,
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td>"ok" when healthy</td>
+</tr>
+<tr>
+<td><code>module</code></td>
+<td>string</td>
+<td>Module name</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td>Module version</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2026 PolyAPI</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PolyAPI Team">
+        <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/ARCHITECTURE/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>PolyAPI Architecture - PolyAPI Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PolyAPI Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting-started/installation/" class="dropdown-item">Installation</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/quickstart/" class="dropdown-item">Quick Start</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/architecture/" class="dropdown-item">Architecture Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Gateway</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gateway/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/api/" class="dropdown-item">API Reference</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Modules</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../modules/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../modules/creating/" class="dropdown-item">Creating a Module</a>
+</li>
+                                    
+<li>
+    <a href="../modules/sort/" class="dropdown-item">Sort Module</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Contract</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contract/json-contract/" class="dropdown-item">JSON Contract</a>
+</li>
+                                    
+<li>
+    <a href="../contract/error-codes/" class="dropdown-item">Error Codes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Development</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../development/testing/" class="dropdown-item">Testing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/ARCHITECTURE.md" class="nav-link">Edit on LibreCourseUY/PolyAPI
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#polyapi-architecture" class="nav-link">PolyAPI Architecture</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-fastapi" class="nav-link">Why FastAPI?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#polyglot-philosophy" class="nav-link">Polyglot Philosophy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#json-contract-decoupling" class="nav-link">JSON Contract Decoupling</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#request-lifecycle" class="nav-link">Request Lifecycle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#versioning-strategy" class="nav-link">Versioning Strategy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security-considerations" class="nav-link">Security Considerations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#future-enhancements" class="nav-link">Future Enhancements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="polyapi-architecture">PolyAPI Architecture<a class="headerlink" href="#polyapi-architecture" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>PolyAPI is a polyglot microservices architecture that demonstrates how to build production-ready APIs using multiple programming languages. The system uses a Python FastAPI gateway for orchestration and language-agnostic JSON contracts for inter-module communication.</p>
+<h2 id="why-fastapi">Why FastAPI?<a class="headerlink" href="#why-fastapi" title="Permanent link">&para;</a></h2>
+<p>FastAPI was chosen as the gateway framework for several compelling reasons:</p>
+<ol>
+<li><strong>Native Async Support</strong>: FastAPI's async capabilities allow efficient handling of concurrent requests to multiple modules</li>
+<li><strong>Automatic Documentation</strong>: OpenAPI/Swagger documentation is generated automatically</li>
+<li><strong>Pydantic Integration</strong>: Built-in request/response validation using Pydantic models</li>
+<li><strong>Performance</strong>: Comparable to Node.js and Go in terms of raw performance</li>
+<li><strong>Ecosystem</strong>: Large ecosystem of middleware, authentication, and database integrations</li>
+</ol>
+<h2 id="polyglot-philosophy">Polyglot Philosophy<a class="headerlink" href="#polyglot-philosophy" title="Permanent link">&para;</a></h2>
+<p>PolyAPI embraces the principle that different tasks are best solved with different tools:</p>
+<h3 id="language-selection-criteria">Language Selection Criteria<a class="headerlink" href="#language-selection-criteria" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Python</strong>: Rapid development, strong typing with Pydantic, excellent for orchestration layers</li>
+<li><strong>Go</strong>: Performance-critical services, simple deployment, excellent standard library</li>
+<li><strong>Future modules</strong>: Could include Rust (performance), Node.js (I/O-heavy), Java (enterprise)</li>
+</ul>
+<h3 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Best Tool for the Job</strong>: Each module can use the most appropriate language</li>
+<li><strong>Team Flexibility</strong>: Teams can work in their preferred languages</li>
+<li><strong>Incremental Adoption</strong>: New modules can be added without rewriting existing code</li>
+<li><strong>Learning Opportunity</strong>: Developers can contribute in their language of choice</li>
+</ol>
+<h2 id="json-contract-decoupling">JSON Contract Decoupling<a class="headerlink" href="#json-contract-decoupling" title="Permanent link">&para;</a></h2>
+<p>The JSON contract is the backbone of PolyAPI's polyglot architecture. It ensures that:</p>
+<ol>
+<li><strong>Language Independence</strong>: Any language that can send/receive JSON can participate</li>
+<li><strong>Loose Coupling</strong>: Modules don't import each other's code</li>
+<li><strong>Interface Segregation</strong>: The contract defines exactly what needs to be implemented</li>
+<li><strong>Independent Deployment</strong>: Modules can be updated independently</li>
+</ol>
+<h2 id="request-lifecycle">Request Lifecycle<a class="headerlink" href="#request-lifecycle" title="Permanent link">&para;</a></h2>
+<pre><code>┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
+│  Client  │────▶│ Gateway  │────▶│  Module  │────▶│ Gateway  │────▶│  Client  │
+└──────────┘     └──────────┘     └──────────┘     └──────────┘     └──────────┘
+                      │                                           │
+                      │ 1. Receive request                        │
+                      │ 2. Validate contract                      │
+                      │ 3. Generate request_id                    │
+                      │                              6. Return    │
+                      │                              contract     │
+                      │                              response    │
+                                         4. Forward to
+                                         module via HTTP
+
+                                         5. Receive
+                                         module response
+</code></pre>
+<h3 id="detailed-steps">Detailed Steps<a class="headerlink" href="#detailed-steps" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Client Request</strong>: External client sends HTTP POST to gateway with JSON body</li>
+<li><strong>Gateway Validation</strong>: Gateway validates request against Pydantic models</li>
+<li><strong>Request ID Injection</strong>: If not provided, gateway generates UUID v4</li>
+<li><strong>Module Forwarding</strong>: Gateway forwards request to appropriate module</li>
+<li><strong>Module Processing</strong>: Module validates, processes, and returns response</li>
+<li><strong>Response Transformation</strong>: Gateway may transform or enrich the response</li>
+<li><strong>Client Response</strong>: Gateway returns contract-compliant JSON to client</li>
+</ol>
+<h2 id="versioning-strategy">Versioning Strategy<a class="headerlink" href="#versioning-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="contract-versioning">Contract Versioning<a class="headerlink" href="#contract-versioning" title="Permanent link">&para;</a></h3>
+<p>The JSON contract uses Semantic Versioning (SemVer):</p>
+<ul>
+<li><strong>MAJOR</strong>: Breaking changes to contract structure</li>
+<li><strong>MINOR</strong>: Backward-compatible additions</li>
+<li><strong>PATCH</strong>: Bug fixes</li>
+</ul>
+<h3 id="module-versioning">Module Versioning<a class="headerlink" href="#module-versioning" title="Permanent link">&para;</a></h3>
+<p>Each module declares its version in the response envelope:</p>
+<pre><code class="language-json">{
+  &quot;module&quot;: &quot;sort&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<h3 id="gateway-versioning">Gateway Versioning<a class="headerlink" href="#gateway-versioning" title="Permanent link">&para;</a></h3>
+<p>The gateway itself is versioned and may support multiple contract versions simultaneously.</p>
+<h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h2>
+<h3 id="network-isolation">Network Isolation<a class="headerlink" href="#network-isolation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Modules are not directly exposed to the internet</li>
+<li>Only the gateway listens on externally accessible ports</li>
+<li>Internal communication happens on a Docker network</li>
+</ul>
+<h3 id="input-validation">Input Validation<a class="headerlink" href="#input-validation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Gateway validates all incoming requests using Pydantic</li>
+<li>Each module validates input before processing</li>
+<li>Error responses follow the contract format (no raw tracebacks)</li>
+</ul>
+<h3 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>No hardcoded URLs or ports in code</li>
+<li>All configuration via environment variables</li>
+<li>Sensitive data should use Docker secrets or external config management</li>
+</ul>
+<h2 id="future-enhancements">Future Enhancements<a class="headerlink" href="#future-enhancements" title="Permanent link">&para;</a></h2>
+<p>Possible improvements to the architecture:</p>
+<ol>
+<li><strong>Service Discovery</strong>: Replace static URLs with dynamic service discovery</li>
+<li><strong>Authentication</strong>: Add JWT or API key authentication at the gateway</li>
+<li><strong>Rate Limiting</strong>: Implement rate limiting per client/module</li>
+<li><strong>Tracing</strong>: Add distributed tracing with OpenTelemetry</li>
+<li><strong>Caching</strong>: Implement response caching for expensive operations</li>
+<li><strong>Circuit Breakers</strong>: Add resilience patterns for module failures</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2026 PolyAPI</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

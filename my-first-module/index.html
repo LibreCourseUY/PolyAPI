@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PolyAPI Team">
+        <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/my-first-module/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>My First Module - PolyAPI Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PolyAPI Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting-started/installation/" class="dropdown-item">Installation</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/quickstart/" class="dropdown-item">Quick Start</a>
+</li>
+                                    
+<li>
+    <a href="../getting-started/architecture/" class="dropdown-item">Architecture Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Gateway</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gateway/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../gateway/api/" class="dropdown-item">API Reference</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Modules</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../modules/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../modules/creating/" class="dropdown-item">Creating a Module</a>
+</li>
+                                    
+<li>
+    <a href="../modules/sort/" class="dropdown-item">Sort Module</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Contract</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contract/json-contract/" class="dropdown-item">JSON Contract</a>
+</li>
+                                    
+<li>
+    <a href="../contract/error-codes/" class="dropdown-item">Error Codes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Development</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../development/testing/" class="dropdown-item">Testing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/my-first-module.md" class="nav-link">Edit on LibreCourseUY/PolyAPI
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#my-first-module" class="nav-link">My First Module</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-were-building" class="nav-link">What We're Building</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#prerequisites" class="nav-link">Prerequisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-1-create-the-module-directory" class="nav-link">Step 1: Create the Module Directory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-2-create-the-go-module-files" class="nav-link">Step 2: Create the Go Module Files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-3-register-the-module-in-the-gateway" class="nav-link">Step 3: Register the Module in the Gateway</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-4-update-docker-compose" class="nav-link">Step 4: Update Docker Compose</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-5-write-documentation" class="nav-link">Step 5: Write Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#error-codes" class="nav-link">Error Codes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#summary" class="nav-link">Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="my-first-module">My First Module<a class="headerlink" href="#my-first-module" title="Permanent link">&para;</a></h1>
+<p>This guide walks you through creating your first module for PolyAPI from scratch. By the end, you'll have a working module that communicates with the gateway via the JSON contract.</p>
+<h2 id="what-were-building">What We're Building<a class="headerlink" href="#what-were-building" title="Permanent link">&para;</a></h2>
+<p>We'll create a simple "greet" module that:
+- Accepts a name in the payload
+- Returns a personalized greeting
+- Follows the PolyAPI JSON contract</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Python 3.11+ (for local development)</li>
+<li>Go 1.21+ (for this example, but you can use any language)</li>
+<li>Docker and Docker Compose</li>
+</ul>
+<h2 id="step-1-create-the-module-directory">Step 1: Create the Module Directory<a class="headerlink" href="#step-1-create-the-module-directory" title="Permanent link">&para;</a></h2>
+<p>Create a new directory for your module under <code>modules/</code>:</p>
+<pre><code class="language-bash">mkdir -p modules/greet
+cd modules/greet
+</code></pre>
+<h2 id="step-2-create-the-go-module-files">Step 2: Create the Go Module Files<a class="headerlink" href="#step-2-create-the-go-module-files" title="Permanent link">&para;</a></h2>
+<p>Create the following files in your module directory:</p>
+<h3 id="gomod">go.mod<a class="headerlink" href="#gomod" title="Permanent link">&para;</a></h3>
+<pre><code class="language-go">module greet
+
+go 1.21
+</code></pre>
+<h3 id="maingo">main.go<a class="headerlink" href="#maingo" title="Permanent link">&para;</a></h3>
+<pre><code class="language-go">package main
+
+import (
+    &quot;log&quot;
+    &quot;net/http&quot;
+    &quot;os&quot;
+)
+
+func getEnv(key, defaultValue string) string {
+    if value, exists := os.LookupEnv(key); exists {
+        return value
+    }
+    return defaultValue
+}
+
+func main() {
+    port := getEnv(&quot;PORT&quot;, &quot;8082&quot;)
+
+    http.HandleFunc(&quot;/greet&quot;, HandleGreet)
+    http.HandleFunc(&quot;/health&quot;, HandleHealth)
+
+    log.Printf(&quot;Starting greet module on port %s&quot;, port)
+    log.Printf(&quot;Module: %s, Version: %s&quot;, moduleName, moduleVersion)
+
+    if err := http.ListenAndServe(&quot;:&quot;+port, nil); err != nil {
+        log.Fatalf(&quot;Failed to start server: %v&quot;, err)
+    }
+}
+</code></pre>
+<h3 id="handlergo">handler.go<a class="headerlink" href="#handlergo" title="Permanent link">&para;</a></h3>
+<pre><code class="language-go">package main
+
+import (
+    &quot;encoding/json&quot;
+    &quot;net/http&quot;
+    &quot;time&quot;
+)
+
+const (
+    moduleName    = &quot;greet&quot;
+    moduleVersion = &quot;1.0.0&quot;
+)
+
+// RequestEnvelope represents the incoming JSON contract request.
+type RequestEnvelope struct {
+    RequestID string      `json:&quot;request_id&quot;`
+    Module    string      `json:&quot;module&quot;`
+    Version   string      `json:&quot;version&quot;`
+    Payload   GreetPayload `json:&quot;payload&quot;`
+}
+
+// GreetPayload contains the greeting request data.
+type GreetPayload struct {
+    Name string `json:&quot;name&quot;`
+}
+
+// ResponseEnvelope represents the outgoing JSON contract response.
+type ResponseEnvelope struct {
+    RequestID string       `json:&quot;request_id&quot;`
+    Module    string       `json:&quot;module&quot;`
+    Version   string       `json:&quot;version&quot;`
+    Status    string       `json:&quot;status&quot;`
+    Data      *GreetResponseData `json:&quot;data&quot;`
+    Error     *ResponseError    `json:&quot;error&quot;`
+}
+
+// GreetResponseData contains the greeting result.
+type GreetResponseData struct {
+    Greeting string `json:&quot;greeting&quot;`
+}
+
+// ResponseError represents an error in the contract format.
+type ResponseError struct {
+    Code    string      `json:&quot;code&quot;`
+    Message string      `json:&quot;message&quot;`
+    Details interface{} `json:&quot;details&quot;`
+}
+
+// HealthResponse represents the health check response.
+type HealthResponse struct {
+    Status  string `json:&quot;status&quot;`
+    Module  string `json:&quot;module&quot;`
+    Version string `json:&quot;version&quot;`
+}
+
+func generateRequestID() string {
+    return &quot;req-&quot; + time.Now().Format(&quot;20060102150405&quot;)
+}
+
+// HandleGreet processes the greet request.
+func HandleGreet(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+
+    if r.Method != http.MethodPost {
+        resp := ResponseEnvelope{
+            RequestID: generateRequestID(),
+            Module:    moduleName,
+            Version:   moduleVersion,
+            Status:    &quot;error&quot;,
+            Data:      nil,
+            Error: &amp;ResponseError{
+                Code:    &quot;INVALID_METHOD&quot;,
+                Message: &quot;Only POST method is allowed&quot;,
+                Details: nil,
+            },
+        }
+        w.WriteHeader(http.StatusMethodNotAllowed)
+        json.NewEncoder(w).Encode(resp)
+        return
+    }
+
+    var req RequestEnvelope
+    if err := json.NewDecoder(r.Body).Decode(&amp;req); err != nil {
+        resp := ResponseEnvelope{
+            RequestID: generateRequestID(),
+            Module:    moduleName,
+            Version:   moduleVersion,
+            Status:    &quot;error&quot;,
+            Data:      nil,
+            Error: &amp;ResponseError{
+                Code:    &quot;INVALID_JSON&quot;,
+                Message: &quot;Invalid JSON format: &quot; + err.Error(),
+                Details: nil,
+            },
+        }
+        w.WriteHeader(http.StatusBadRequest)
+        json.NewEncoder(w).Encode(resp)
+        return
+    }
+
+    requestID := req.RequestID
+    if requestID == &quot;&quot; {
+        requestID = generateRequestID()
+    }
+
+    if req.Payload.Name == &quot;&quot; {
+        resp := ResponseEnvelope{
+            RequestID: requestID,
+            Module:    moduleName,
+            Version:   moduleVersion,
+            Status:    &quot;error&quot;,
+            Data:      nil,
+            Error: &amp;ResponseError{
+                Code:    &quot;INVALID_INPUT&quot;,
+                Message: &quot;Name is required&quot;,
+                Details: nil,
+            },
+        }
+        w.WriteHeader(http.StatusBadRequest)
+        json.NewEncoder(w).Encode(resp)
+        return
+    }
+
+    resp := ResponseEnvelope{
+        RequestID: requestID,
+        Module:    moduleName,
+        Version:   moduleVersion,
+        Status:    &quot;success&quot;,
+        Data: &amp;GreetResponseData{
+            Greeting: &quot;Hello, &quot; + req.Payload.Name + &quot;!&quot;,
+        },
+        Error: nil,
+    }
+
+    w.WriteHeader(http.StatusOK)
+    json.NewEncoder(w).Encode(resp)
+}
+
+// HandleHealth returns the health status of the module.
+func HandleHealth(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+    resp := HealthResponse{
+        Status:  &quot;ok&quot;,
+        Module:  moduleName,
+        Version: moduleVersion,
+    }
+    w.WriteHeader(http.StatusOK)
+    json.NewEncoder(w).Encode(resp)
+}
+</code></pre>
+<h3 id="dockerfile">Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h3>
+<pre><code class="language-dockerfile">FROM golang:1.21-alpine AS builder
+
+WORKDIR /app
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -o /greet-service
+
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+WORKDIR /app
+COPY --from=builder /greet-service .
+EXPOSE 8082
+CMD [&quot;./greet-service&quot;]
+</code></pre>
+<h2 id="step-3-register-the-module-in-the-gateway">Step 3: Register the Module in the Gateway<a class="headerlink" href="#step-3-register-the-module-in-the-gateway" title="Permanent link">&para;</a></h2>
+<h3 id="update-gatewayconfigpy">Update gateway/config.py<a class="headerlink" href="#update-gatewayconfigpy" title="Permanent link">&para;</a></h3>
+<p>Add your module to the SERVICES dictionary:</p>
+<pre><code class="language-python">SERVICES = {
+    &quot;sort&quot;: {
+        &quot;name&quot;: &quot;sort&quot;,
+        &quot;language&quot;: &quot;Go&quot;,
+        &quot;port&quot;: &quot;8081&quot;,
+        &quot;url&quot;: os.getenv(&quot;SORT_MODULE_URL&quot;, &quot;http://sort:8081&quot;),
+        &quot;description&quot;: &quot;String and number sorting microservice&quot;,
+        &quot;version&quot;: &quot;1.0.0&quot;,
+    },
+    &quot;greet&quot;: {  # Add this new entry
+        &quot;name&quot;: &quot;greet&quot;,
+        &quot;language&quot;: &quot;Go&quot;,
+        &quot;port&quot;: &quot;8082&quot;,
+        &quot;url&quot;: os.getenv(&quot;GREET_MODULE_URL&quot;, &quot;http://greet:8082&quot;),
+        &quot;description&quot;: &quot;Personalized greeting microservice&quot;,
+        &quot;version&quot;: &quot;1.0.0&quot;,
+    },
+}
+</code></pre>
+<h3 id="add-a-route-in-gatewayrouterroutespy">Add a Route in gateway/router/routes.py<a class="headerlink" href="#add-a-route-in-gatewayrouterroutespy" title="Permanent link">&para;</a></h3>
+<p>Add a new endpoint to proxy requests to your module:</p>
+<pre><code class="language-python">@router.post(&quot;/greet&quot;)
+async def greet_person(request: Request):
+    &quot;&quot;&quot;Proxy request to the Go greet module.&quot;&quot;&quot;
+    try:
+        body = await request.json()
+    except Exception:
+        raise HTTPException(status_code=400, detail=&quot;Invalid JSON body&quot;)
+
+    request_id = body.get(&quot;request_id&quot;, &quot;&quot;)
+    if not request_id:
+        request_id = str(uuid.uuid4())
+
+    greet_url = get_service_url(&quot;greet&quot;)
+
+    envelope = RequestEnvelope(
+        request_id=request_id,
+        module=body.get(&quot;module&quot;, &quot;greet&quot;),
+        version=body.get(&quot;version&quot;, &quot;1.0.0&quot;),
+        payload=body.get(&quot;payload&quot;, {}),
+    )
+
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.post(
+                f&quot;{greet_url}/greet&quot;,
+                json=envelope.model_dump(exclude_none=True),
+            )
+            response.raise_for_status()
+            module_response = response.json()
+    except httpx.ConnectError:
+        error_response = ResponseEnvelope(
+            request_id=request_id,
+            module=&quot;greet&quot;,
+            version=&quot;1.0.0&quot;,
+            status=&quot;error&quot;,
+            data=None,
+            error=ResponseError(
+                code=&quot;MODULE_UNREACHABLE&quot;,
+                message=&quot;The greet module is not reachable&quot;,
+                details={&quot;url&quot;: greet_url},
+            ),
+        )
+        return error_response.model_dump()
+
+    return module_response
+</code></pre>
+<h2 id="step-4-update-docker-compose">Step 4: Update Docker Compose<a class="headerlink" href="#step-4-update-docker-compose" title="Permanent link">&para;</a></h2>
+<p>Add your module to <code>docker-compose.yml</code>:</p>
+<pre><code class="language-yaml">services:
+  gateway:
+    # ... existing config
+    environment:
+      - SORT_MODULE_URL=http://sort:8081
+      - GREET_MODULE_URL=http://greet:8082  # Add this
+
+  sort:
+    # ... existing config
+
+  greet:  # Add this new service
+    build:
+      context: ./modules/greet
+      dockerfile: Dockerfile
+    container_name: polyapi-greet
+    environment:
+      - PORT=8082
+    networks:
+      - polyapi-net
+    restart: unless-stopped
+</code></pre>
+<h2 id="step-5-write-documentation">Step 5: Write Documentation<a class="headerlink" href="#step-5-write-documentation" title="Permanent link">&para;</a></h2>
+<p>Create <code>docs/modules/greet.md</code>:</p>
+<pre><code class="language-markdown"># Greet Module
+
+The Greet module is a Go-based microservice that returns personalized greetings.
+
+## Overview
+
+| Property | Value |
+|----------|-------|
+| Language | Go |
+| Version | 1.0.0 |
+| Port | 8082 |
+
+## API Reference
+
+### Health Endpoint
+
+**Endpoint:** `GET /health`
+
+**Response:**
+```json
+{
+  &quot;status&quot;: &quot;ok&quot;,
+  &quot;module&quot;: &quot;greet&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;
+}
+</code></pre>
+<h3 id="greet-endpoint">Greet Endpoint<a class="headerlink" href="#greet-endpoint" title="Permanent link">&para;</a></h3>
+<p><strong>Endpoint:</strong> <code>POST /greet</code></p>
+<p><strong>Request:</strong></p>
+<pre><code class="language-json">{
+  &quot;payload&quot;: {
+    &quot;name&quot;: &quot;World&quot;
+  }
+}
+</code></pre>
+<p><strong>Response:</strong></p>
+<pre><code class="language-json">{
+  &quot;request_id&quot;: &quot;...&quot;,
+  &quot;module&quot;: &quot;greet&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;greeting&quot;: &quot;Hello, World!&quot;
+  },
+  &quot;error&quot;: null
+}
+</code></pre>
+<h2 id="error-codes">Error Codes<a class="headerlink" href="#error-codes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INVALID_INPUT</td>
+<td>Name is required</td>
+</tr>
+<tr>
+<td>INVALID_METHOD</td>
+<td>Only POST allowed</td>
+</tr>
+<tr>
+<td>INVALID_JSON</td>
+<td>Malformed JSON</td>
+</tr>
+</tbody>
+</table>
+<pre><code>
+## Step 6: Test Your Module
+
+```bash
+# Build and start all services
+docker-compose up --build -d
+
+# Test the greet endpoint
+curl -X POST http://localhost:8000/greet \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;payload&quot;: {&quot;name&quot;: &quot;PolyAPI&quot;}}'
+
+# Expected response:
+# {
+#   &quot;request_id&quot;: &quot;...&quot;,
+#   &quot;module&quot;: &quot;greet&quot;,
+#   &quot;version&quot;: &quot;1.0.0&quot;,
+#   &quot;status&quot;: &quot;success&quot;,
+#   &quot;data&quot;: {
+#     &quot;greeting&quot;: &quot;Hello, PolyAPI!&quot;
+#   },
+#   &quot;error&quot;: null
+# }
+</code></pre>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>Congratulations! You've created your first PolyAPI module. The key concepts are:</p>
+<ol>
+<li><strong>JSON Contract</strong>: All modules communicate using the same request/response envelope format</li>
+<li><strong>HTTP + JSON</strong>: No shared databases or direct imports between modules</li>
+<li><strong>Environment Configuration</strong>: All settings come from environment variables</li>
+<li><strong>Docker Networking</strong>: Modules communicate internally through the Docker network</li>
+</ol>
+<p>You can now create modules in any language following this same pattern!</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2026 PolyAPI</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
