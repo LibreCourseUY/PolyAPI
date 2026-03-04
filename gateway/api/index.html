@@ -1,311 +1,323 @@
-<!doctype html>
-<html data-bs-theme="">
-    <head>
-                <title>API Reference - PolyAPI Documentation</title>
+<!DOCTYPE html>
+<html lang="en">
 
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polyglot Microservices API Gateway - A clean, responsive theme for static documentation">
+    <meta name="author" content="PolyAPI Team">
+    <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/gateway/api/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-            
-            <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/gateway/api/">
-            <meta name="author" content="PolyAPI Team">
-
-            
-                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
-            
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-                <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/grayscale-dark.min.css">
-                <script>hljs.highlightAll();</script>
-
-        <script>var base_url = '../..';</script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="../../assets/css/root.min.css">
-            <link rel="stylesheet" href="../../assets/css/main.min.css">
-            <link rel="stylesheet" href="../../assets/css/media.min.css">
-            <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
-                <script src="../../search/main.js"></script>
-
-            
-                
-            
-          
-    </head>
-
-    <body>
-        <div class="container py-3">
-            <header>
-                    <!-- block header -->
-<nav class="navbar navbar-expand-xl border-bottom">
-    <div class="container-fluid">
-        
-
-        
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">PolyAPI Documentation</span>
-        
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
-
-                <!-- block menu -->
-                <li class="nav-item">
-                    <!-- block menu -->
     
-        <li class="nav-item" id="component-menu">
-            <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Getting Started]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/installation/" class="dropdown-item text-decoration-none ">Installation</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/quickstart/" class="dropdown-item text-decoration-none ">Quick Start</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/architecture/" class="dropdown-item text-decoration-none ">Architecture Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class=" active 
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Gateway]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../configuration/" class="dropdown-item text-decoration-none ">Configuration</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="./" class="dropdown-item text-decoration-none  active ">API Reference</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Modules]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/creating/" class="dropdown-item text-decoration-none ">Creating a Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/sort/" class="dropdown-item text-decoration-none ">Sort Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../my-first-module/" class="dropdown-item text-decoration-none ">My First Module</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Contract]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../contract/json-contract/" class="dropdown-item text-decoration-none ">JSON Contract</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../contract/error-codes/" class="dropdown-item text-decoration-none ">Error Codes</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRACT/" class="dropdown-item text-decoration-none ">Contract Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Development]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/contributing/" class="dropdown-item text-decoration-none ">Contributing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/testing/" class="dropdown-item text-decoration-none ">Testing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../ARCHITECTURE/" class="dropdown-item text-decoration-none ">Architecture</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRIBUTING/" class="dropdown-item text-decoration-none ">Contributing Guide</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../../CLA/">[CLA]</a>
-                        </li>
-            </ul>
-        </li>
-<!-- endblock -->
-                </li>
-                <!-- endblock -->
+    <title>API Reference - PolyAPI Documentation</title>
+    
 
-                <!-- block search -->
-                <li class="nav-item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="md-search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </li>
-                <!--  endblock -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
 
-                <!-- block source -->
-                <li class="nav-item">
-                    
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/monokai.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">PolyAPI Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
-                            <!-- block source -->
-<div class="md-source source-detail">
-  <div class="md-source-repo-icon">
-    <i class="fa fa-github-alt" aria-hidden="true"></i>
-  </div>
+                            
+<li >
+    <a href="../../getting-started/installation/">Installation</a>
+</li>
 
-  <div class="md-source-repo-url">
-    <a href="https://github.com/LibreCourseUY/PolyAPI" class="md-source">
-        LibreCourseUY/PolyAPI
-    </a>
-
-    <ul class="md-source-repo-text">
-      <li>
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <img
-          alt="GitHub tag (latest by date)"
-          src="https://img.shields.io/github/v/tag/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <img
-          alt="GitHub Repo stars"
-          src="https://img.shields.io/github/stars/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-code-fork" aria-hidden="true"></i>
-        <img
-          alt="GitHub forks"
-          src="https://img.shields.io/github/forks/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-<!--  endblock -->
                         
-                    
-                </li>
-                <!--  endblock -->
+                            
+<li >
+    <a href="../../getting-started/quickstart/">Quick Start</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../getting-started/architecture/">Architecture Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gateway <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../configuration/">Configuration</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">API Reference</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../modules/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../modules/creating/">Creating a Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../modules/sort/">Sort Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../my-first-module/">My First Module</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contract <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../contract/json-contract/">JSON Contract</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contract/error-codes/">Error Codes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRACT/">Contract Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../development/contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../development/testing/">Testing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ARCHITECTURE/">Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRIBUTING/">Contributing Guide</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../CLA/">CLA</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../configuration/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../modules/overview/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/gateway/api.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
             </ul>
         </div>
     </div>
-</nav>
-<!--  endblock -->
-            </header>
-
-            <main><!-- block search -->
-<div class="collapse" id="collapseExample">
-    <div role="search" class="search-box">
-        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-            <input type="text" name="q" class="search-query"
-            placeholder="Search docs" title="Type search term here" />
-        </form>
-    </div>
 </div>
-<!-- endblock -->
 
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#api-reference">API Reference</a></li>
+            <li class="second-level"><a href="#base-url">Base URL</a></li>
                 
-                        <!-- block content -->
-<section class="container post" id="component-content">
-    <article>
-        <header>
-            
-                <h1 class=" title" id="component-title">API Reference</h1>
-            
-        </header>
-        <p><h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
+            <li class="second-level"><a href="#endpoints">Endpoints</a></li>
+                
+                <li class="third-level"><a href="#health-check">Health Check</a></li>
+                <li class="third-level"><a href="#list-modules">List Modules</a></li>
+                <li class="third-level"><a href="#get-module-info">Get Module Info</a></li>
+                <li class="third-level"><a href="#sort-module">Sort Module</a></li>
+            <li class="second-level"><a href="#interactive-documentation">Interactive Documentation</a></li>
+                
+            <li class="second-level"><a href="#curl-examples">cURL Examples</a></li>
+                
+                <li class="third-level"><a href="#health-check_1">Health Check</a></li>
+                <li class="third-level"><a href="#list-modules_1">List Modules</a></li>
+                <li class="third-level"><a href="#sort-strings">Sort Strings</a></li>
+                <li class="third-level"><a href="#sort-numbers">Sort Numbers</a></li>
+            <li class="second-level"><a href="#http-status-codes">HTTP Status Codes</a></li>
+                
+            <li class="second-level"><a href="#error-response-format">Error Response Format</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
 <p>Complete API reference for the PolyAPI Gateway.</p>
 <h2 id="base-url">Base URL<a class="headerlink" href="#base-url" title="Permanent link">&para;</a></h2>
-<pre><code>http://localhost:8000
-</code></pre>
+<div class="codehilite"><pre><span></span><code>http://localhost:8000
+</code></pre></div>
+
 <h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h2>
 <h3 id="health-check">Health Check<a class="headerlink" href="#health-check" title="Permanent link">&para;</a></h3>
 <p>Check the health status of the gateway.</p>
 <p><strong>Endpoint:</strong> <code>GET /health</code></p>
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;gateway&quot;: &quot;gateway&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gateway&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h3 id="list-modules">List Modules<a class="headerlink" href="#list-modules" title="Permanent link">&para;</a></h3>
 <p>Get a list of all registered modules.</p>
 <p><strong>Endpoint:</strong> <code>GET /modules</code></p>
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;modules&quot;: [
-    {
-      &quot;name&quot;: &quot;sort&quot;,
-      &quot;version&quot;: &quot;1.0.0&quot;,
-      &quot;url&quot;: &quot;http://localhost:8081&quot;,
-      &quot;status&quot;: &quot;unknown&quot;
-    }
-  ]
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;modules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:8081&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unknown&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h3 id="get-module-info">Get Module Info<a class="headerlink" href="#get-module-info" title="Permanent link">&para;</a></h3>
 <p>Get detailed information about a specific module.</p>
@@ -328,28 +340,30 @@
 </tbody>
 </table>
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;name&quot;: &quot;sort&quot;,
-  &quot;language&quot;: &quot;Go&quot;,
-  &quot;port&quot;: &quot;8081&quot;,
-  &quot;url&quot;: &quot;http://localhost:8081&quot;,
-  &quot;description&quot;: &quot;String and number sorting microservice&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;endpoints&quot;: [&quot;/sort&quot;]
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Go&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8081&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:8081&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;String and number sorting microservice&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;endpoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/sort&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h3 id="sort-module">Sort Module<a class="headerlink" href="#sort-module" title="Permanent link">&para;</a></h3>
 <p>Sort an array of strings or numbers.</p>
 <p><strong>Endpoint:</strong> <code>POST /sort</code></p>
 <p><strong>Request Body:</strong></p>
-<pre><code class="language-json">{
-  &quot;payload&quot;: {
-    &quot;items&quot;: [&quot;banana&quot;, &quot;apple&quot;, &quot;cherry&quot;],
-    &quot;order&quot;: &quot;asc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;apple&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cherry&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;asc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <table>
 <thead>
 <tr>
@@ -375,19 +389,20 @@
 </tbody>
 </table>
 <p><strong>Success Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;sorted&quot;: [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;],
-    &quot;item_type&quot;: &quot;string&quot;,
-    &quot;count&quot;: 3
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;sorted&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cherry&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;item_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <table>
 <thead>
 <tr>
@@ -415,47 +430,50 @@
 </tbody>
 </table>
 <p><strong>Error Response (Empty Input):</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;EMPTY_INPUT&quot;,
-    &quot;message&quot;: &quot;input array is empty&quot;,
-    &quot;details&quot;: null
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;input array is empty&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p><strong>Error Response (Mixed Types):</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;MIXED_TYPES&quot;,
-    &quot;message&quot;: &quot;mixed types in array&quot;,
-    &quot;details&quot;: null
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440002&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIXED_TYPES&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mixed types in array&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p><strong>Error Response (Invalid Order):</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440003&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;INVALID_ORDER&quot;,
-    &quot;message&quot;: &quot;invalid order value, must be 'asc' or 'desc'&quot;,
-    &quot;details&quot;: null
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440003&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INVALID_ORDER&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalid order value, must be &#39;asc&#39; or &#39;desc&#39;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="interactive-documentation">Interactive Documentation<a class="headerlink" href="#interactive-documentation" title="Permanent link">&para;</a></h2>
 <p>FastAPI provides interactive documentation:</p>
@@ -465,21 +483,25 @@
 </ul>
 <h2 id="curl-examples">cURL Examples<a class="headerlink" href="#curl-examples" title="Permanent link">&para;</a></h2>
 <h3 id="health-check_1">Health Check<a class="headerlink" href="#health-check_1" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl http://localhost:8000/health
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8000/health
+</code></pre></div>
+
 <h3 id="list-modules_1">List Modules<a class="headerlink" href="#list-modules_1" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl http://localhost:8000/modules
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8000/modules
+</code></pre></div>
+
 <h3 id="sort-strings">Sort Strings<a class="headerlink" href="#sort-strings" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl -X POST http://localhost:8000/sort \
-  -H &quot;Content-Type: application/json&quot; \
-  -d '{&quot;payload&quot;: {&quot;items&quot;: [&quot;zebra&quot;, &quot;ant&quot;, &quot;mango&quot;], &quot;order&quot;: &quot;asc&quot;}}'
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/sort<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;payload&quot;: {&quot;items&quot;: [&quot;zebra&quot;, &quot;ant&quot;, &quot;mango&quot;], &quot;order&quot;: &quot;asc&quot;}}&#39;</span>
+</code></pre></div>
+
 <h3 id="sort-numbers">Sort Numbers<a class="headerlink" href="#sort-numbers" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl -X POST http://localhost:8000/sort \
-  -H &quot;Content-Type: application/json&quot; \
-  -d '{&quot;payload&quot;: {&quot;items&quot;: [5, 2, 8, 1], &quot;order&quot;: &quot;desc&quot;}}'
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/sort<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;payload&quot;: {&quot;items&quot;: [5, 2, 8, 1], &quot;order&quot;: &quot;desc&quot;}}&#39;</span>
+</code></pre></div>
+
 <h2 id="http-status-codes">HTTP Status Codes<a class="headerlink" href="#http-status-codes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -517,72 +539,125 @@
 </table>
 <h2 id="error-response-format">Error Response Format<a class="headerlink" href="#error-response-format" title="Permanent link">&para;</a></h2>
 <p>All errors follow this format:</p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;uuid-v4&quot;,
-  &quot;module&quot;: &quot;module-name&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;ERROR_CODE&quot;,
-    &quot;message&quot;: &quot;Human-readable message&quot;,
-    &quot;details&quot;: {}
-  }
-}
-</code></pre></p>
-    </article>
-</section>
-<!-- endblock -->
-                
-                
-            </main>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uuid-v4&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;module-name&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ERROR_CODE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Human-readable message&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+        
+        
+    </div>
 
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright &copy; 2026 PolyAPI</small><br>
             
-                    <!-- block preview -->
-    <div class="preview row row-cols-md-3 text-center pt-md-3" id="component-preview">
-        <div class="col themed-grid-col">
-            <a rel="prev" href="../configuration/" class="nav-link">
-                <i class="fa fa-arrow-left"></i> Previous
-            </a>
-        </div>
-        <div class="col themed-grid-col"></div>
-        <div class="col themed-grid-col">
-            <a rel="next" href="../../modules/overview/" class="nav-link">
-                Next <i class="fa fa-arrow-right"></i>
-            </a>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/go.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/bash.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/json.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-<!-- endblock -->
-            
-
-            
-                    <!-- block footer -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
-    <div class="row">
-        <div class="col-12 col-md">
-                <!-- block copyright -->
-    <small class="d-block mb-3">Copyright &copy; 2026 PolyAPI</small>
-
-    <small class="d-block mb-3">
-        Made with
-        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
-            Simple Blog for MkDocs
-        </a>
-    </small>
-
-<!-- endblock -->
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-</footer>
-<!-- endblock -->
-            
-        </div>
-
-            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
-            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
-            <script src="../../assets/js/main.min.js""></script>
-                <script src="../../search/main.js" defer></script>
-
+</div>
     </body>
 
 </html>

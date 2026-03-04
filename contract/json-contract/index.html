@@ -1,280 +1,318 @@
-<!doctype html>
-<html data-bs-theme="">
-    <head>
-                <title>JSON Contract - PolyAPI Documentation</title>
+<!DOCTYPE html>
+<html lang="en">
 
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polyglot Microservices API Gateway - A clean, responsive theme for static documentation">
+    <meta name="author" content="PolyAPI Team">
+    <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/contract/json-contract/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-            
-            <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/contract/json-contract/">
-            <meta name="author" content="PolyAPI Team">
-
-            
-                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
-            
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-                <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/grayscale-dark.min.css">
-                <script>hljs.highlightAll();</script>
-
-        <script>var base_url = '../..';</script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="../../assets/css/root.min.css">
-            <link rel="stylesheet" href="../../assets/css/main.min.css">
-            <link rel="stylesheet" href="../../assets/css/media.min.css">
-            <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
-                <script src="../../search/main.js"></script>
-
-            
-                
-            
-          
-    </head>
-
-    <body>
-        <div class="container py-3">
-            <header>
-                    <!-- block header -->
-<nav class="navbar navbar-expand-xl border-bottom">
-    <div class="container-fluid">
-        
-
-        
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">PolyAPI Documentation</span>
-        
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
-
-                <!-- block menu -->
-                <li class="nav-item">
-                    <!-- block menu -->
     
-        <li class="nav-item" id="component-menu">
-            <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Getting Started]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/installation/" class="dropdown-item text-decoration-none ">Installation</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/quickstart/" class="dropdown-item text-decoration-none ">Quick Start</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/architecture/" class="dropdown-item text-decoration-none ">Architecture Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Gateway]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/configuration/" class="dropdown-item text-decoration-none ">Configuration</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/api/" class="dropdown-item text-decoration-none ">API Reference</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Modules]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/creating/" class="dropdown-item text-decoration-none ">Creating a Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../modules/sort/" class="dropdown-item text-decoration-none ">Sort Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../my-first-module/" class="dropdown-item text-decoration-none ">My First Module</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class=" active 
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Contract]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="./" class="dropdown-item text-decoration-none  active ">JSON Contract</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../error-codes/" class="dropdown-item text-decoration-none ">Error Codes</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRACT/" class="dropdown-item text-decoration-none ">Contract Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Development]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/contributing/" class="dropdown-item text-decoration-none ">Contributing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/testing/" class="dropdown-item text-decoration-none ">Testing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../ARCHITECTURE/" class="dropdown-item text-decoration-none ">Architecture</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRIBUTING/" class="dropdown-item text-decoration-none ">Contributing Guide</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../../CLA/">[CLA]</a>
-                        </li>
-            </ul>
-        </li>
-<!-- endblock -->
-                </li>
-                <!-- endblock -->
+    <title>JSON Contract - PolyAPI Documentation</title>
+    
 
-                <!-- block search -->
-                <li class="nav-item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="md-search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </li>
-                <!--  endblock -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
 
-                <!-- block source -->
-                <li class="nav-item">
-                    
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/monokai.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">PolyAPI Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
-                            <!-- block source -->
-<div class="md-source source-detail">
-  <div class="md-source-repo-icon">
-    <i class="fa fa-github-alt" aria-hidden="true"></i>
-  </div>
+                            
+<li >
+    <a href="../../getting-started/installation/">Installation</a>
+</li>
 
-  <div class="md-source-repo-url">
-    <a href="https://github.com/LibreCourseUY/PolyAPI" class="md-source">
-        LibreCourseUY/PolyAPI
-    </a>
-
-    <ul class="md-source-repo-text">
-      <li>
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <img
-          alt="GitHub tag (latest by date)"
-          src="https://img.shields.io/github/v/tag/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <img
-          alt="GitHub Repo stars"
-          src="https://img.shields.io/github/stars/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-code-fork" aria-hidden="true"></i>
-        <img
-          alt="GitHub forks"
-          src="https://img.shields.io/github/forks/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-<!--  endblock -->
                         
-                    
-                </li>
-                <!--  endblock -->
+                            
+<li >
+    <a href="../../getting-started/quickstart/">Quick Start</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../getting-started/architecture/">Architecture Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gateway <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../gateway/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gateway/configuration/">Configuration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gateway/api/">API Reference</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../modules/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../modules/creating/">Creating a Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../modules/sort/">Sort Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../my-first-module/">My First Module</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contract <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">JSON Contract</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../error-codes/">Error Codes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRACT/">Contract Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../development/contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../development/testing/">Testing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ARCHITECTURE/">Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRIBUTING/">Contributing Guide</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../CLA/">CLA</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../my-first-module/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../error-codes/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/contract/json-contract.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
             </ul>
         </div>
     </div>
-</nav>
-<!--  endblock -->
-            </header>
-
-            <main><!-- block search -->
-<div class="collapse" id="collapseExample">
-    <div role="search" class="search-box">
-        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-            <input type="text" name="q" class="search-query"
-            placeholder="Search docs" title="Type search term here" />
-        </form>
-    </div>
 </div>
-<!-- endblock -->
 
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#json-contract-specification">JSON Contract Specification</a></li>
+            <li class="second-level"><a href="#table-of-contents">Table of Contents</a></li>
                 
-                        <!-- block content -->
-<section class="container post" id="component-content">
-    <article>
-        <header>
-            
-                <h1 class=" title" id="component-title">JSON Contract</h1>
-            
-        </header>
-        <p><h1 id="json-contract-specification">JSON Contract Specification<a class="headerlink" href="#json-contract-specification" title="Permanent link">&para;</a></h1>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+                <li class="third-level"><a href="#communication-flow">Communication Flow</a></li>
+            <li class="second-level"><a href="#request-envelope">Request Envelope</a></li>
+                
+                <li class="third-level"><a href="#schema">Schema</a></li>
+                <li class="third-level"><a href="#field-definitions">Field Definitions</a></li>
+                <li class="third-level"><a href="#validation-rules">Validation Rules</a></li>
+                <li class="third-level"><a href="#client-side-request-format">Client-Side Request Format</a></li>
+            <li class="second-level"><a href="#response-envelope">Response Envelope</a></li>
+                
+                <li class="third-level"><a href="#success-response-schema">Success Response Schema</a></li>
+                <li class="third-level"><a href="#error-response-schema">Error Response Schema</a></li>
+                <li class="third-level"><a href="#field-definitions_1">Field Definitions</a></li>
+                <li class="third-level"><a href="#error-object-structure">Error Object Structure</a></li>
+            <li class="second-level"><a href="#error-handling">Error Handling</a></li>
+                
+                <li class="third-level"><a href="#standard-error-codes">Standard Error Codes</a></li>
+                <li class="third-level"><a href="#example-error-responses">Example Error Responses</a></li>
+            <li class="second-level"><a href="#health-check-protocol">Health Check Protocol</a></li>
+                
+                <li class="third-level"><a href="#request">Request</a></li>
+                <li class="third-level"><a href="#response-schema">Response Schema</a></li>
+                <li class="third-level"><a href="#field-definitions_2">Field Definitions</a></li>
+                <li class="third-level"><a href="#example-health-check">Example Health Check</a></li>
+            <li class="second-level"><a href="#versioning-policy">Versioning Policy</a></li>
+                
+                <li class="third-level"><a href="#semantic-versioning">Semantic Versioning</a></li>
+                <li class="third-level"><a href="#version-format">Version Format</a></li>
+                <li class="third-level"><a href="#contract-evolution">Contract Evolution</a></li>
+                <li class="third-level"><a href="#version-negotiation">Version Negotiation</a></li>
+            <li class="second-level"><a href="#language-implementations">Language Implementations</a></li>
+                
+                <li class="third-level"><a href="#go">Go</a></li>
+                <li class="third-level"><a href="#python">Python</a></li>
+                <li class="third-level"><a href="#rust">Rust</a></li>
+            <li class="second-level"><a href="#best-practices">Best Practices</a></li>
+                
+                <li class="third-level"><a href="#for-module-developers">For Module Developers</a></li>
+                <li class="third-level"><a href="#for-client-developers">For Client Developers</a></li>
+            <li class="second-level"><a href="#example-requestresponse-pairs">Example Request/Response Pairs</a></li>
+                
+                <li class="third-level"><a href="#sort-module-string-sorting">Sort Module: String Sorting</a></li>
+                <li class="third-level"><a href="#sort-module-number-sorting-descending">Sort Module: Number Sorting (Descending)</a></li>
+                <li class="third-level"><a href="#error-empty-input">Error: Empty Input</a></li>
+            <li class="second-level"><a href="#related-documentation">Related Documentation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="json-contract-specification">JSON Contract Specification<a class="headerlink" href="#json-contract-specification" title="Permanent link">&para;</a></h1>
 <p>The JSON contract is the backbone of PolyAPI's polyglot architecture. This document provides a comprehensive specification for all inter-module communication, enabling modules written in different programming languages to communicate seamlessly.</p>
 <h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ol>
@@ -297,7 +335,7 @@
 <li><strong>Error Standardization</strong>: Consistent error format across all modules</li>
 </ul>
 <h3 id="communication-flow">Communication Flow<a class="headerlink" href="#communication-flow" title="Permanent link">&para;</a></h3>
-<pre><code>Client                  Gateway                   Module
+<div class="codehilite"><pre><span></span><code>Client                  Gateway                   Module
   │                       │                         │
   │  POST /endpoint      │                         │
   │─────────────────────&gt;│                         │
@@ -308,21 +346,23 @@
   │                      │&lt;────────────────────────│
   │  ResponseEnvelope   │                         │
   │&lt;─────────────────────│                         │
-</code></pre>
+</code></pre></div>
+
 <hr />
 <h2 id="request-envelope">Request Envelope<a class="headerlink" href="#request-envelope" title="Permanent link">&para;</a></h2>
 <p>The request envelope is the format clients use to communicate with modules through the gateway. The gateway wraps the client's payload with additional metadata before forwarding to the module.</p>
 <h3 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h3>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;payload&quot;: {
-    &quot;items&quot;: [5, 2, 8, 1],
-    &quot;order&quot;: &quot;asc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;asc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="field-definitions">Field Definitions<a class="headerlink" href="#field-definitions" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -389,13 +429,14 @@
 </table>
 <h3 id="client-side-request-format">Client-Side Request Format<a class="headerlink" href="#client-side-request-format" title="Permanent link">&para;</a></h3>
 <p>When making requests to the gateway, clients only need to provide the payload:</p>
-<pre><code class="language-json">{
-  &quot;payload&quot;: {
-    &quot;items&quot;: [5, 2, 8, 1],
-    &quot;order&quot;: &quot;asc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;asc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p>The gateway automatically adds:
 - <code>request_id</code> (if not provided)
 - <code>module</code> (from the route)
@@ -404,35 +445,37 @@
 <h2 id="response-envelope">Response Envelope<a class="headerlink" href="#response-envelope" title="Permanent link">&para;</a></h2>
 <p>All responses, whether success or error, must use the response envelope format. This ensures consistent error handling and response parsing across all clients.</p>
 <h3 id="success-response-schema">Success Response Schema<a class="headerlink" href="#success-response-schema" title="Permanent link">&para;</a></h3>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;sorted&quot;: [1, 2, 5, 8],
-    &quot;item_type&quot;: &quot;number&quot;,
-    &quot;count&quot;: 4
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;sorted&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;item_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;number&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="error-response-schema">Error Response Schema<a class="headerlink" href="#error-response-schema" title="Permanent link">&para;</a></h3>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;EMPTY_INPUT&quot;,
-    &quot;message&quot;: &quot;input array is empty&quot;,
-    &quot;details&quot;: {
-      &quot;field&quot;: &quot;items&quot;
-    }
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;input array is empty&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;items&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="field-definitions_1">Field Definitions<a class="headerlink" href="#field-definitions_1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -579,71 +622,76 @@
 </table>
 <h3 id="example-error-responses">Example Error Responses<a class="headerlink" href="#example-error-responses" title="Permanent link">&para;</a></h3>
 <h4 id="validation-error">Validation Error<a class="headerlink" href="#validation-error" title="Permanent link">&para;</a></h4>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;INVALID_INPUT&quot;,
-    &quot;message&quot;: &quot;field 'order' must be either 'asc' or 'desc'&quot;,
-    &quot;details&quot;: {
-      &quot;field&quot;: &quot;order&quot;,
-      &quot;received&quot;: &quot;invalid_value&quot;,
-      &quot;expected&quot;: [&quot;asc&quot;, &quot;desc&quot;]
-    }
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INVALID_INPUT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;field &#39;order&#39; must be either &#39;asc&#39; or &#39;desc&#39;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;received&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalid_value&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;expected&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;desc&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h4 id="missing-required-field">Missing Required Field<a class="headerlink" href="#missing-required-field" title="Permanent link">&para;</a></h4>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;INVALID_INPUT&quot;,
-    &quot;message&quot;: &quot;field 'items' is required&quot;,
-    &quot;details&quot;: {
-      &quot;field&quot;: &quot;items&quot;,
-      &quot;reason&quot;: &quot;missing required field&quot;
-    }
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INVALID_INPUT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;field &#39;items&#39; is required&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;items&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;missing required field&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h4 id="internal-error">Internal Error<a class="headerlink" href="#internal-error" title="Permanent link">&para;</a></h4>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;PROCESSING_ERROR&quot;,
-    &quot;message&quot;: &quot;failed to sort items&quot;,
-    &quot;details&quot;: {
-      &quot;reason&quot;: &quot;comparison function failed&quot;,
-      &quot;internal_error&quot;: &quot;nil pointer dereference&quot;
-    }
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440002&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PROCESSING_ERROR&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;failed to sort items&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comparison function failed&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nil pointer dereference&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="health-check-protocol">Health Check Protocol<a class="headerlink" href="#health-check-protocol" title="Permanent link">&para;</a></h2>
 <p>Every module must implement a health check endpoint for the gateway to verify its availability.</p>
 <h3 id="request">Request<a class="headerlink" href="#request" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">GET /health
-</code></pre>
+<div class="codehilite"><pre><span></span><code>GET<span class="w"> </span>/health
+</code></pre></div>
+
 <p>No request body or headers required.</p>
 <h3 id="response-schema">Response Schema<a class="headerlink" href="#response-schema" title="Permanent link">&para;</a></h3>
-<pre><code class="language-json">{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="field-definitions_2">Field Definitions<a class="headerlink" href="#field-definitions_2" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -672,15 +720,17 @@
 </tbody>
 </table>
 <h3 id="example-health-check">Example Health Check<a class="headerlink" href="#example-health-check" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl http://localhost:8081/health
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8081/health
+</code></pre></div>
+
 <p>Response:</p>
-<pre><code class="language-json">{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="versioning-policy">Versioning Policy<a class="headerlink" href="#versioning-policy" title="Permanent link">&para;</a></h2>
 <h3 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">&para;</a></h3>
@@ -691,8 +741,9 @@
 <li><strong>PATCH</strong> (1.0.x): Bug fixes. No changes to the contract, only corrections to behavior.</li>
 </ul>
 <h3 id="version-format">Version Format<a class="headerlink" href="#version-format" title="Permanent link">&para;</a></h3>
-<pre><code>MAJOR.MINOR.PATCH[-PRERELEASE][+BUILD]
-</code></pre>
+<div class="codehilite"><pre><span></span><code>MAJOR.MINOR.PATCH[-PRERELEASE][+BUILD]
+</code></pre></div>
+
 <p>Examples:
 - <code>1.0.0</code> - Initial release
 - <code>1.1.0</code> - New feature added
@@ -728,249 +779,252 @@
 <hr />
 <h2 id="language-implementations">Language Implementations<a class="headerlink" href="#language-implementations" title="Permanent link">&para;</a></h2>
 <h3 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h3>
-<pre><code class="language-go">package main
+<div class="codehilite"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
 
-import (
-    &quot;encoding/json&quot;
-    &quot;log&quot;
-    &quot;net/http&quot;
-)
+<span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;encoding/json&quot;</span>
+<span class="w">    </span><span class="s">&quot;log&quot;</span>
+<span class="w">    </span><span class="s">&quot;net/http&quot;</span>
+<span class="p">)</span>
 
-// RequestEnvelope represents the incoming JSON contract request
-type RequestEnvelope struct {
-    RequestID string                 `json:&quot;request_id&quot;`
-    Module    string                 `json:&quot;module&quot;`
-    Version   string                 `json:&quot;version&quot;`
-    Payload   map[string]interface{} `json:&quot;payload&quot;`
-}
+<span class="c1">// RequestEnvelope represents the incoming JSON contract request</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">RequestEnvelope</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">RequestID</span><span class="w"> </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;request_id&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">    </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w">   </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="w">    </span><span class="nx">Payload</span><span class="w">   </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;payload&quot;`</span>
+<span class="p">}</span>
 
-// Error represents error information in the response
-type Error struct {
-    Code    string      `json:&quot;code&quot;`
-    Message string      `json:&quot;message&quot;`
-    Details interface{} `json:&quot;details,omitempty&quot;`
-}
+<span class="c1">// Error represents error information in the response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">Error</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Code</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;code&quot;`</span>
+<span class="w">    </span><span class="nx">Message</span><span class="w"> </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;message&quot;`</span>
+<span class="w">    </span><span class="nx">Details</span><span class="w"> </span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;details,omitempty&quot;`</span>
+<span class="p">}</span>
 
-// ResponseEnvelope represents the JSON contract response
-type ResponseEnvelope struct {
-    RequestID string      `json:&quot;request_id&quot;`
-    Module    string      `json:&quot;module&quot;`
-    Version   string      `json:&quot;version&quot;`
-    Status    string      `json:&quot;status&quot;`
-    Data      interface{} `json:&quot;data,omitempty&quot;`
-    Error     *Error      `json:&quot;error,omitempty&quot;`
-}
+<span class="c1">// ResponseEnvelope represents the JSON contract response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">RequestID</span><span class="w"> </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;request_id&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w">   </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="w">    </span><span class="nx">Status</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;status&quot;`</span>
+<span class="w">    </span><span class="nx">Data</span><span class="w">      </span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;data,omitempty&quot;`</span>
+<span class="w">    </span><span class="nx">Error</span><span class="w">     </span><span class="o">*</span><span class="nx">Error</span><span class="w">      </span><span class="s">`json:&quot;error,omitempty&quot;`</span>
+<span class="p">}</span>
 
-// HealthResponse represents the health check response
-type HealthResponse struct {
-    Status  string `json:&quot;status&quot;`
-    Module  string `json:&quot;module&quot;`
-    Version string `json:&quot;version&quot;`
-}
+<span class="c1">// HealthResponse represents the health check response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">HealthResponse</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Status</span><span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;status&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="p">}</span>
 
-func main() {
-    http.HandleFunc(&quot;/your_endpoint&quot;, handleRequest)
-    http.HandleFunc(&quot;/health&quot;, handleHealth)
-    log.Fatal(http.ListenAndServe(&quot;:8082&quot;, nil))
-}
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&quot;/your_endpoint&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleRequest</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&quot;/health&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleHealth</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">ListenAndServe</span><span class="p">(</span><span class="s">&quot;:8082&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">))</span>
+<span class="p">}</span>
 
-func handleHealth(w http.ResponseWriter, r *http.Request) {
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    json.NewEncoder(w).Encode(HealthResponse{
-        Status:  &quot;ok&quot;,
-        Module:  &quot;your_module&quot;,
-        Version: &quot;1.0.0&quot;,
-    })
-}
+<span class="kd">func</span><span class="w"> </span><span class="nx">handleHealth</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">HealthResponse</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">  </span><span class="s">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">  </span><span class="s">&quot;your_module&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="p">}</span>
 
-func handleRequest(w http.ResponseWriter, r *http.Request) {
-    var req RequestEnvelope
-    if err := json.NewDecoder(r.Body).Decode(&amp;req); err != nil {
-        sendError(w, req.RequestID, &quot;INVALID_JSON&quot;, &quot;malformed json&quot;, nil)
-        return
-    }
+<span class="kd">func</span><span class="w"> </span><span class="nx">handleRequest</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="nx">RequestEnvelope</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewDecoder</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">Body</span><span class="p">).</span><span class="nx">Decode</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">req</span><span class="p">);</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;INVALID_JSON&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;malformed json&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Validate required fields
-    if req.Payload == nil {
-        sendError(w, req.RequestID, &quot;EMPTY_INPUT&quot;, &quot;payload is required&quot;, nil)
-        return
-    }
+<span class="w">    </span><span class="c1">// Validate required fields</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">Payload</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;payload is required&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Process the request
-    result := processData(req.Payload)
+<span class="w">    </span><span class="c1">// Process the request</span>
+<span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">processData</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">Payload</span><span class="p">)</span>
 
-    // Send success response
-    resp := ResponseEnvelope{
-        RequestID: req.RequestID,
-        Module:    &quot;your_module&quot;,
-        Version:   &quot;1.0.0&quot;,
-        Status:    &quot;success&quot;,
-        Data:      result,
-        Error:     nil,
-    }
+<span class="w">    </span><span class="c1">// Send success response</span>
+<span class="w">    </span><span class="nx">resp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">RequestID</span><span class="p">:</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;your_module&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w">   </span><span class="s">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Data</span><span class="p">:</span><span class="w">      </span><span class="nx">result</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Error</span><span class="p">:</span><span class="w">     </span><span class="kc">nil</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}</span>
 
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    json.NewEncoder(w).Encode(resp)
-}
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span>
+<span class="p">}</span>
 
-func processData(payload map[string]interface{}) interface{} {
-    // Your processing logic here
-    return map[string]interface{}{&quot;result&quot;: &quot;processed&quot;}
-}
+<span class="kd">func</span><span class="w"> </span><span class="nx">processData</span><span class="p">(</span><span class="nx">payload</span><span class="w"> </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{})</span><span class="w"> </span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Your processing logic here</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}{</span><span class="s">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;processed&quot;</span><span class="p">}</span>
+<span class="p">}</span>
 
-func sendError(w http.ResponseWriter, requestID, code, message string, details interface{}) {
-    resp := ResponseEnvelope{
-        RequestID: requestID,
-        Module:    &quot;your_module&quot;,
-        Version:   &quot;1.0.0&quot;,
-        Status:    &quot;error&quot;,
-        Data:      nil,
-        Error:     &amp;Error{Code: code, Message: message, Details: details},
-    }
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    w.WriteHeader(http.StatusBadRequest)
-    json.NewEncoder(w).Encode(resp)
-}
-</code></pre>
+<span class="kd">func</span><span class="w"> </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">requestID</span><span class="p">,</span><span class="w"> </span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">details</span><span class="w"> </span><span class="kd">interface</span><span class="p">{})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">resp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">RequestID</span><span class="p">:</span><span class="w"> </span><span class="nx">requestID</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;your_module&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w">   </span><span class="s">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Data</span><span class="p">:</span><span class="w">      </span><span class="kc">nil</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Error</span><span class="p">:</span><span class="w">     </span><span class="o">&amp;</span><span class="nx">Error</span><span class="p">{</span><span class="nx">Code</span><span class="p">:</span><span class="w"> </span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">Message</span><span class="p">:</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">Details</span><span class="p">:</span><span class="w"> </span><span class="nx">details</span><span class="p">},</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">WriteHeader</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusBadRequest</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
-<pre><code class="language-python">from flask import Flask, request, jsonify
-from pydantic import BaseModel, Field
-from typing import Any, Optional, Literal
-import uuid
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Literal</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-# Request/Response Models
-class RequestEnvelope(BaseModel):
-    request_id: str = &quot;&quot;
-    module: str
-    version: str
-    payload: dict[str, Any]
+<span class="c1"># Request/Response Models</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RequestEnvelope</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">module</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">payload</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
 
-class ErrorInfo(BaseModel):
-    code: str
-    message: str
-    details: Optional[dict[str, Any]] = None
+<span class="k">class</span><span class="w"> </span><span class="nc">ErrorInfo</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">code</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">message</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">details</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
 
-class ResponseEnvelope(BaseModel):
-    request_id: str
-    module: str
-    version: str
-    status: Literal[&quot;success&quot;, &quot;error&quot;]
-    data: Optional[Any] = None
-    error: Optional[ErrorInfo] = None
+<span class="k">class</span><span class="w"> </span><span class="nc">ResponseEnvelope</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">module</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">status</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;success&quot;</span><span class="p">,</span> <span class="s2">&quot;error&quot;</span><span class="p">]</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">error</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ErrorInfo</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 
-@app.route('/health')
-def health():
-    return jsonify({
-        &quot;status&quot;: &quot;ok&quot;,
-        &quot;module&quot;: &quot;your_module&quot;,
-        &quot;version&quot;: &quot;1.0.0&quot;
-    })
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/health&#39;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">health</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;your_module&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span>
+    <span class="p">})</span>
 
-@app.route('/your_endpoint', methods=['POST'])
-def handle_request():
-    try:
-        data = request.json
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/your_endpoint&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">handle_request</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span>
 
-        # Parse and validate request
-        req = RequestEnvelope(**data)
+        <span class="c1"># Parse and validate request</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">RequestEnvelope</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">)</span>
 
-        # Process the request
-        result = process_data(req.payload)
+        <span class="c1"># Process the request</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">process_data</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">payload</span><span class="p">)</span>
 
-        # Return success response
-        resp = ResponseEnvelope(
-            request_id=req.request_id or str(uuid.uuid4()),
-            module=&quot;your_module&quot;,
-            version=&quot;1.0.0&quot;,
-            status=&quot;success&quot;,
-            data=result,
-            error=None
-        )
-        return jsonify(resp.model_dump(exclude_none=True))
+        <span class="c1"># Return success response</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">ResponseEnvelope</span><span class="p">(</span>
+            <span class="n">request_id</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">request_id</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+            <span class="n">module</span><span class="o">=</span><span class="s2">&quot;your_module&quot;</span><span class="p">,</span>
+            <span class="n">version</span><span class="o">=</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+            <span class="n">status</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">result</span><span class="p">,</span>
+            <span class="n">error</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 
-    except Exception as e:
-        # Return error response
-        resp = ResponseEnvelope(
-            request_id=data.get('request_id', str(uuid.uuid4())),
-            module=&quot;your_module&quot;,
-            version=&quot;1.0.0&quot;,
-            status=&quot;error&quot;,
-            data=None,
-            error=ErrorInfo(
-                code=&quot;PROCESSING_ERROR&quot;,
-                message=str(e)
-            )
-        )
-        return jsonify(resp.model_dump(exclude_none=True)), 400
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="c1"># Return error response</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">ResponseEnvelope</span><span class="p">(</span>
+            <span class="n">request_id</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;request_id&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())),</span>
+            <span class="n">module</span><span class="o">=</span><span class="s2">&quot;your_module&quot;</span><span class="p">,</span>
+            <span class="n">version</span><span class="o">=</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+            <span class="n">status</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">error</span><span class="o">=</span><span class="n">ErrorInfo</span><span class="p">(</span>
+                <span class="n">code</span><span class="o">=</span><span class="s2">&quot;PROCESSING_ERROR&quot;</span><span class="p">,</span>
+                <span class="n">message</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">exclude_none</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span> <span class="mi">400</span>
 
-def process_data(payload: dict[str, Any]) -&gt; dict[str, Any]:
-    # Your processing logic here
-    return {&quot;result&quot;: &quot;processed&quot;}
+<span class="k">def</span><span class="w"> </span><span class="nf">process_data</span><span class="p">(</span><span class="n">payload</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="c1"># Your processing logic here</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="s2">&quot;processed&quot;</span><span class="p">}</span>
 
-if __name__ == '__main__':
-    app.run(port=8082)
-</code></pre>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8082</span><span class="p">)</span>
+</code></pre></div>
+
 <h3 id="rust">Rust<a class="headerlink" href="#rust" title="Permanent link">&para;</a></h3>
-<pre><code class="language-rust">use serde::{Deserialize, Serialize};
-use std::collections::HashMap;
+<div class="codehilite"><pre><span></span><code><span class="k">use</span><span class="w"> </span><span class="n">serde</span><span class="p">::{</span><span class="n">Deserialize</span><span class="p">,</span><span class="w"> </span><span class="n">Serialize</span><span class="p">};</span>
+<span class="k">use</span><span class="w"> </span><span class="n">std</span><span class="p">::</span><span class="n">collections</span><span class="p">::</span><span class="n">HashMap</span><span class="p">;</span>
 
-#[derive(Serialize, Deserialize)]
-pub struct RequestEnvelope {
-    #[serde(default)]
-    pub request_id: String,
-    pub module: String,
-    pub version: String,
-    pub payload: serde_json::Value,
-}
+<span class="cp">#[derive(Serialize, Deserialize)]</span>
+<span class="k">pub</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">RequestEnvelope</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cp">#[serde(default)]</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">request_id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">module</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">version</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">payload</span><span class="p">:</span><span class="w"> </span><span class="nc">serde_json</span><span class="p">::</span><span class="n">Value</span><span class="p">,</span>
+<span class="p">}</span>
 
-#[derive(Serialize, Deserialize)]
-pub struct ErrorInfo {
-    pub code: String,
-    pub message: String,
-    #[serde(skip_serializing_if = &quot;Option::is_none&quot;)]
-    pub details: Option&lt;serde_json::Value&gt;,
-}
+<span class="cp">#[derive(Serialize, Deserialize)]</span>
+<span class="k">pub</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ErrorInfo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">code</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">message</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="cp">#[serde(skip_serializing_if = </span><span class="s">&quot;Option::is_none&quot;</span><span class="cp">)]</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">details</span><span class="p">:</span><span class="w"> </span><span class="nb">Option</span><span class="o">&lt;</span><span class="n">serde_json</span><span class="p">::</span><span class="n">Value</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="p">}</span>
 
-#[derive(Serialize, Deserialize)]
-pub struct ResponseEnvelope {
-    pub request_id: String,
-    pub module: String,
-    pub version: String,
-    pub status: String,
-    #[serde(skip_serializing_if = &quot;Option::is_none&quot;)]
-    pub data: Option&lt;serde_json::Value&gt;,
-    #[serde(skip_serializing_if = &quot;Option::is_none&quot;)]
-    pub error: Option&lt;ErrorInfo&gt;,
-}
+<span class="cp">#[derive(Serialize, Deserialize)]</span>
+<span class="k">pub</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ResponseEnvelope</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">request_id</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">module</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">version</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="cp">#[serde(skip_serializing_if = </span><span class="s">&quot;Option::is_none&quot;</span><span class="cp">)]</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">data</span><span class="p">:</span><span class="w"> </span><span class="nb">Option</span><span class="o">&lt;</span><span class="n">serde_json</span><span class="p">::</span><span class="n">Value</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="w">    </span><span class="cp">#[serde(skip_serializing_if = </span><span class="s">&quot;Option::is_none&quot;</span><span class="cp">)]</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="nb">Option</span><span class="o">&lt;</span><span class="n">ErrorInfo</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="p">}</span>
 
-#[derive(Serialize, Deserialize)]
-pub struct HealthResponse {
-    pub status: String,
-    pub module: String,
-    pub version: String,
-}
+<span class="cp">#[derive(Serialize, Deserialize)]</span>
+<span class="k">pub</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">HealthResponse</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">module</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="n">version</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+<span class="p">}</span>
 
-fn process_data(payload: serde_json::Value) -&gt; serde_json::Value {
-    serde_json::json!({ &quot;result&quot;: &quot;processed&quot; })
-}
+<span class="k">fn</span><span class="w"> </span><span class="nf">process_data</span><span class="p">(</span><span class="n">payload</span><span class="p">:</span><span class="w"> </span><span class="nc">serde_json</span><span class="p">::</span><span class="n">Value</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">serde_json</span><span class="p">::</span><span class="n">Value</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">serde_json</span><span class="p">::</span><span class="n">json</span><span class="o">!</span><span class="p">({</span><span class="w"> </span><span class="s">&quot;result&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;processed&quot;</span><span class="w"> </span><span class="p">})</span>
+<span class="p">}</span>
 
-fn send_error(request_id: &amp;str, code: &amp;str, message: &amp;str) -&gt; ResponseEnvelope {
-    ResponseEnvelope {
-        request_id: request_id.to_string(),
-        module: &quot;your_module&quot;.to_string(),
-        version: &quot;1.0.0&quot;.to_string(),
-        status: &quot;error&quot;.to_string(),
-        data: None,
-        error: Some(ErrorInfo {
-            code: code.to_string(),
-            message: message.to_string(),
-            details: None,
-        }),
-    }
-}
-</code></pre>
+<span class="k">fn</span><span class="w"> </span><span class="nf">send_error</span><span class="p">(</span><span class="n">request_id</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="kt">str</span><span class="p">,</span><span class="w"> </span><span class="n">code</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="kt">str</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="kt">str</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">ResponseEnvelope</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ResponseEnvelope</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">request_id</span><span class="p">:</span><span class="w"> </span><span class="nc">request_id</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">        </span><span class="n">module</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;your_module&quot;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">        </span><span class="n">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">        </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;error&quot;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">        </span><span class="n">data</span><span class="p">:</span><span class="w"> </span><span class="nb">None</span><span class="p">,</span>
+<span class="w">        </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="n">ErrorInfo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">code</span><span class="p">:</span><span class="w"> </span><span class="nc">code</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">message</span><span class="p">:</span><span class="w"> </span><span class="nc">message</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">details</span><span class="p">:</span><span class="w"> </span><span class="nb">None</span><span class="p">,</span>
+<span class="w">        </span><span class="p">}),</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <h3 id="for-module-developers">For Module Developers<a class="headerlink" href="#for-module-developers" title="Permanent link">&para;</a></h3>
@@ -995,82 +1049,88 @@ fn send_error(request_id: &amp;str, code: &amp;str, message: &amp;str) -&gt; Res
 <h2 id="example-requestresponse-pairs">Example Request/Response Pairs<a class="headerlink" href="#example-requestresponse-pairs" title="Permanent link">&para;</a></h2>
 <h3 id="sort-module-string-sorting">Sort Module: String Sorting<a class="headerlink" href="#sort-module-string-sorting" title="Permanent link">&para;</a></h3>
 <p><strong>Request:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;payload&quot;: {
-    &quot;items&quot;: [&quot;banana&quot;, &quot;apple&quot;, &quot;cherry&quot;],
-    &quot;order&quot;: &quot;asc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;apple&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cherry&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;asc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;sorted&quot;: [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;],
-    &quot;item_type&quot;: &quot;string&quot;,
-    &quot;count&quot;: 3
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;sorted&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cherry&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;item_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="sort-module-number-sorting-descending">Sort Module: Number Sorting (Descending)<a class="headerlink" href="#sort-module-number-sorting-descending" title="Permanent link">&para;</a></h3>
 <p><strong>Request:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;payload&quot;: {
-    &quot;items&quot;: [5, 2, 8, 1],
-    &quot;order&quot;: &quot;desc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;desc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440001&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;sorted&quot;: [8, 5, 2, 1],
-    &quot;item_type&quot;: &quot;number&quot;,
-    &quot;count&quot;: 4
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;sorted&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;item_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;number&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="error-empty-input">Error: Empty Input<a class="headerlink" href="#error-empty-input" title="Permanent link">&para;</a></h3>
 <p><strong>Request:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;payload&quot;: {
-    &quot;items&quot;: [],
-    &quot;order&quot;: &quot;asc&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440002&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;asc&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p><strong>Response:</strong></p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440002&quot;,
-  &quot;module&quot;: &quot;sort&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;error&quot;,
-  &quot;data&quot;: null,
-  &quot;error&quot;: {
-    &quot;code&quot;: &quot;EMPTY_INPUT&quot;,
-    &quot;message&quot;: &quot;input array is empty&quot;,
-    &quot;details&quot;: null
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440002&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;input array is empty&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1078,60 +1138,113 @@ fn send_error(request_id: &amp;str, code: &amp;str, message: &amp;str) -&gt; Res
 <li><a href="../../modules/overview/">Modules Overview</a> - Module architecture</li>
 <li><a href="../../modules/creating/">Creating a Module</a> - Build your first module</li>
 <li><a href="../../gateway/configuration/">Gateway Configuration</a> - Configure modules in gateway</li>
-</ul></p>
-    </article>
-</section>
-<!-- endblock -->
-                
-                
-            </main>
+</ul></div>
+        
+        
+    </div>
 
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright &copy; 2026 PolyAPI</small><br>
             
-                    <!-- block preview -->
-    <div class="preview row row-cols-md-3 text-center pt-md-3" id="component-preview">
-        <div class="col themed-grid-col">
-            <a rel="prev" href="../../my-first-module/" class="nav-link">
-                <i class="fa fa-arrow-left"></i> Previous
-            </a>
-        </div>
-        <div class="col themed-grid-col"></div>
-        <div class="col themed-grid-col">
-            <a rel="next" href="../error-codes/" class="nav-link">
-                Next <i class="fa fa-arrow-right"></i>
-            </a>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/go.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/bash.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/json.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-<!-- endblock -->
-            
-
-            
-                    <!-- block footer -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
-    <div class="row">
-        <div class="col-12 col-md">
-                <!-- block copyright -->
-    <small class="d-block mb-3">Copyright &copy; 2026 PolyAPI</small>
-
-    <small class="d-block mb-3">
-        Made with
-        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
-            Simple Blog for MkDocs
-        </a>
-    </small>
-
-<!-- endblock -->
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-</footer>
-<!-- endblock -->
-            
-        </div>
-
-            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
-            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
-            <script src="../../assets/js/main.min.js""></script>
-                <script src="../../search/main.js" defer></script>
-
+</div>
     </body>
 
 </html>

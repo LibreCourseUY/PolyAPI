@@ -1,280 +1,324 @@
-<!doctype html>
-<html data-bs-theme="">
-    <head>
-                <title>Creating a Module - PolyAPI Documentation</title>
+<!DOCTYPE html>
+<html lang="en">
 
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polyglot Microservices API Gateway - A clean, responsive theme for static documentation">
+    <meta name="author" content="PolyAPI Team">
+    <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/modules/creating/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-            
-            <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/modules/creating/">
-            <meta name="author" content="PolyAPI Team">
-
-            
-                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
-            
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-                <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/grayscale-dark.min.css">
-                <script>hljs.highlightAll();</script>
-
-        <script>var base_url = '../..';</script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="../../assets/css/root.min.css">
-            <link rel="stylesheet" href="../../assets/css/main.min.css">
-            <link rel="stylesheet" href="../../assets/css/media.min.css">
-            <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
-                <script src="../../search/main.js"></script>
-
-            
-                
-            
-          
-    </head>
-
-    <body>
-        <div class="container py-3">
-            <header>
-                    <!-- block header -->
-<nav class="navbar navbar-expand-xl border-bottom">
-    <div class="container-fluid">
-        
-
-        
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">PolyAPI Documentation</span>
-        
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
-
-                <!-- block menu -->
-                <li class="nav-item">
-                    <!-- block menu -->
     
-        <li class="nav-item" id="component-menu">
-            <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Getting Started]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/installation/" class="dropdown-item text-decoration-none ">Installation</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/quickstart/" class="dropdown-item text-decoration-none ">Quick Start</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../getting-started/architecture/" class="dropdown-item text-decoration-none ">Architecture Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Gateway]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/configuration/" class="dropdown-item text-decoration-none ">Configuration</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../gateway/api/" class="dropdown-item text-decoration-none ">API Reference</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class=" active 
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Modules]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="./" class="dropdown-item text-decoration-none  active ">Creating a Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../sort/" class="dropdown-item text-decoration-none ">Sort Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../my-first-module/" class="dropdown-item text-decoration-none ">My First Module</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Contract]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../contract/json-contract/" class="dropdown-item text-decoration-none ">JSON Contract</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../contract/error-codes/" class="dropdown-item text-decoration-none ">Error Codes</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRACT/" class="dropdown-item text-decoration-none ">Contract Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Development]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/contributing/" class="dropdown-item text-decoration-none ">Contributing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../development/testing/" class="dropdown-item text-decoration-none ">Testing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../ARCHITECTURE/" class="dropdown-item text-decoration-none ">Architecture</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../CONTRIBUTING/" class="dropdown-item text-decoration-none ">Contributing Guide</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../../CLA/">[CLA]</a>
-                        </li>
-            </ul>
-        </li>
-<!-- endblock -->
-                </li>
-                <!-- endblock -->
+    <title>Creating a Module - PolyAPI Documentation</title>
+    
 
-                <!-- block search -->
-                <li class="nav-item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="md-search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </li>
-                <!--  endblock -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
 
-                <!-- block source -->
-                <li class="nav-item">
-                    
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/monokai.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">PolyAPI Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
-                            <!-- block source -->
-<div class="md-source source-detail">
-  <div class="md-source-repo-icon">
-    <i class="fa fa-github-alt" aria-hidden="true"></i>
-  </div>
+                            
+<li >
+    <a href="../../getting-started/installation/">Installation</a>
+</li>
 
-  <div class="md-source-repo-url">
-    <a href="https://github.com/LibreCourseUY/PolyAPI" class="md-source">
-        LibreCourseUY/PolyAPI
-    </a>
-
-    <ul class="md-source-repo-text">
-      <li>
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <img
-          alt="GitHub tag (latest by date)"
-          src="https://img.shields.io/github/v/tag/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <img
-          alt="GitHub Repo stars"
-          src="https://img.shields.io/github/stars/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-code-fork" aria-hidden="true"></i>
-        <img
-          alt="GitHub forks"
-          src="https://img.shields.io/github/forks/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-<!--  endblock -->
                         
-                    
-                </li>
-                <!--  endblock -->
+                            
+<li >
+    <a href="../../getting-started/quickstart/">Quick Start</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../getting-started/architecture/">Architecture Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gateway <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../gateway/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gateway/configuration/">Configuration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gateway/api/">API Reference</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Creating a Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../sort/">Sort Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../my-first-module/">My First Module</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contract <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../contract/json-contract/">JSON Contract</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contract/error-codes/">Error Codes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRACT/">Contract Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../development/contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../development/testing/">Testing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../ARCHITECTURE/">Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../CONTRIBUTING/">Contributing Guide</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../CLA/">CLA</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../overview/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../sort/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/modules/creating.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
             </ul>
         </div>
     </div>
-</nav>
-<!--  endblock -->
-            </header>
-
-            <main><!-- block search -->
-<div class="collapse" id="collapseExample">
-    <div role="search" class="search-box">
-        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-            <input type="text" name="q" class="search-query"
-            placeholder="Search docs" title="Type search term here" />
-        </form>
-    </div>
 </div>
-<!-- endblock -->
 
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#creating-a-module">Creating a Module</a></li>
+            <li class="second-level"><a href="#table-of-contents">Table of Contents</a></li>
                 
-                        <!-- block content -->
-<section class="container post" id="component-content">
-    <article>
-        <header>
-            
-                <h1 class=" title" id="component-title">Creating a Module</h1>
-            
-        </header>
-        <p><h1 id="creating-a-module">Creating a Module<a class="headerlink" href="#creating-a-module" title="Permanent link">&para;</a></h1>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+                <li class="third-level"><a href="#prerequisites">Prerequisites</a></li>
+            <li class="second-level"><a href="#module-structure">Module Structure</a></li>
+                
+                <li class="third-level"><a href="#key-components">Key Components</a></li>
+            <li class="second-level"><a href="#step-1-create-the-module-service">Step 1: Create the Module Service</a></li>
+                
+                <li class="third-level"><a href="#option-a-go-module">Option A: Go Module</a></li>
+                <li class="third-level"><a href="#option-b-python-module">Option B: Python Module</a></li>
+                <li class="third-level"><a href="#option-c-nodejs-module">Option C: Node.js Module</a></li>
+            <li class="second-level"><a href="#step-2-implement-the-json-contract">Step 2: Implement the JSON Contract</a></li>
+                
+                <li class="third-level"><a href="#request-format">Request Format</a></li>
+                <li class="third-level"><a href="#response-format">Response Format</a></li>
+                <li class="third-level"><a href="#required-endpoints">Required Endpoints</a></li>
+            <li class="second-level"><a href="#step-3-create-payload-schema">Step 3: Create Payload Schema</a></li>
+                
+                <li class="third-level"><a href="#create-the-schema-file">Create the Schema File</a></li>
+                <li class="third-level"><a href="#register-the-schema">Register the Schema</a></li>
+                <li class="third-level"><a href="#schema-field-types">Schema Field Types</a></li>
+                <li class="third-level"><a href="#field-validation">Field Validation</a></li>
+            <li class="second-level"><a href="#step-4-register-the-module">Step 4: Register the Module</a></li>
+                
+                <li class="third-level"><a href="#edit-gateway-configuration">Edit Gateway Configuration</a></li>
+            <li class="second-level"><a href="#step-5-test-your-module">Step 5: Test Your Module</a></li>
+                
+                <li class="third-level"><a href="#start-the-module">Start the Module</a></li>
+                <li class="third-level"><a href="#start-the-gateway">Start the Gateway</a></li>
+                <li class="third-level"><a href="#test-the-endpoint">Test the Endpoint</a></li>
+                <li class="third-level"><a href="#test-error-handling">Test Error Handling</a></li>
+                <li class="third-level"><a href="#test-health-check">Test Health Check</a></li>
+            <li class="second-level"><a href="#docker-support">Docker Support</a></li>
+                
+                <li class="third-level"><a href="#dockerfile-for-go-module">Dockerfile for Go Module</a></li>
+                <li class="third-level"><a href="#dockerfile-for-python-module">Dockerfile for Python Module</a></li>
+                <li class="third-level"><a href="#build-and-run">Build and Run</a></li>
+                <li class="third-level"><a href="#using-docker-compose">Using Docker Compose</a></li>
+            <li class="second-level"><a href="#best-practices">Best Practices</a></li>
+                
+                <li class="third-level"><a href="#1-input-validation">1. Input Validation</a></li>
+                <li class="third-level"><a href="#2-structured-logging">2. Structured Logging</a></li>
+                <li class="third-level"><a href="#3-graceful-shutdown">3. Graceful Shutdown</a></li>
+                <li class="third-level"><a href="#4-timeouts">4. Timeouts</a></li>
+                <li class="third-level"><a href="#5-rate-limiting">5. Rate Limiting</a></li>
+            <li class="second-level"><a href="#troubleshooting">Troubleshooting</a></li>
+                
+                <li class="third-level"><a href="#module-not-reachable">Module Not Reachable</a></li>
+                <li class="third-level"><a href="#invalid-json-response">Invalid JSON Response</a></li>
+                <li class="third-level"><a href="#404-not-found">404 Not Found</a></li>
+                <li class="third-level"><a href="#payload-validation-error">Payload Validation Error</a></li>
+            <li class="second-level"><a href="#related-documentation">Related Documentation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="creating-a-module">Creating a Module<a class="headerlink" href="#creating-a-module" title="Permanent link">&para;</a></h1>
 <p>This comprehensive guide walks you through creating a new module for PolyAPI. By the end, you'll understand the complete process from setting up your module structure to registering it with the gateway.</p>
 <h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ol>
@@ -329,14 +373,15 @@
 <hr />
 <h2 id="module-structure">Module Structure<a class="headerlink" href="#module-structure" title="Permanent link">&para;</a></h2>
 <p>A typical module follows this structure:</p>
-<pre><code>modules/
-└── your_module/
-    ├── main.go (or main.py, main.rs, etc.)
-    ├── handler.go (or handlers/)
-    ├── go.mod (or requirements.txt, Cargo.toml)
-    ├── Dockerfile
-    └── README.md (optional)
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">modules</span><span class="o">/</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">your_module</span><span class="o">/</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">main</span><span class="p">.</span><span class="k">go</span><span class="w"> </span><span class="p">(</span><span class="ow">or</span><span class="w"> </span><span class="n">main</span><span class="p">.</span><span class="n">py</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="p">.</span><span class="n">rs</span><span class="p">,</span><span class="w"> </span><span class="n">etc</span><span class="p">.)</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">handler</span><span class="p">.</span><span class="k">go</span><span class="w"> </span><span class="p">(</span><span class="ow">or</span><span class="w"> </span><span class="n">handlers</span><span class="o">/</span><span class="p">)</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="k">go</span><span class="p">.</span><span class="k">mod</span><span class="w"> </span><span class="p">(</span><span class="ow">or</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span><span class="p">,</span><span class="w"> </span><span class="n">Cargo</span><span class="p">.</span><span class="n">toml</span><span class="p">)</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">Dockerfile</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">README</span><span class="p">.</span><span class="n">md</span><span class="w"> </span><span class="p">(</span><span class="n">optional</span><span class="p">)</span>
+</code></pre></div>
+
 <h3 id="key-components">Key Components<a class="headerlink" href="#key-components" title="Permanent link">&para;</a></h3>
 <p>Every module must implement:</p>
 <table>
@@ -376,355 +421,367 @@
 <h3 id="option-a-go-module">Option A: Go Module<a class="headerlink" href="#option-a-go-module" title="Permanent link">&para;</a></h3>
 <p>This is the most performant option and follows the existing sort module pattern.</p>
 <h4 id="1-create-the-module-directory">1. Create the module directory<a class="headerlink" href="#1-create-the-module-directory" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">mkdir -p modules/your_module
-cd modules/your_module
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>modules/your_module
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+</code></pre></div>
+
 <h4 id="2-initialize-go-module">2. Initialize Go module<a class="headerlink" href="#2-initialize-go-module" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">go mod init your_module
-</code></pre>
+<div class="codehilite"><pre><span></span><code>go<span class="w"> </span>mod<span class="w"> </span>init<span class="w"> </span>your_module
+</code></pre></div>
+
 <h4 id="3-create-the-main-implementation">3. Create the main implementation<a class="headerlink" href="#3-create-the-main-implementation" title="Permanent link">&para;</a></h4>
-<pre><code class="language-go">// main.go
-package main
+<div class="codehilite"><pre><span></span><code><span class="c1">// main.go</span>
+<span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
 
-import (
-    &quot;encoding/json&quot;
-    &quot;log&quot;
-    &quot;net/http&quot;
-    &quot;strings&quot;
-)
+<span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;encoding/json&quot;</span>
+<span class="w">    </span><span class="s">&quot;log&quot;</span>
+<span class="w">    </span><span class="s">&quot;net/http&quot;</span>
+<span class="w">    </span><span class="s">&quot;strings&quot;</span>
+<span class="p">)</span>
 
-// RequestEnvelope represents the incoming JSON contract request
-type RequestEnvelope struct {
-    RequestID string                 `json:&quot;request_id&quot;`
-    Module    string                 `json:&quot;module&quot;`
-    Version   string                 `json:&quot;version&quot;`
-    Payload   map[string]interface{} `json:&quot;payload&quot;`
-}
+<span class="c1">// RequestEnvelope represents the incoming JSON contract request</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">RequestEnvelope</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">RequestID</span><span class="w"> </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;request_id&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">    </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w">   </span><span class="kt">string</span><span class="w">                 </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="w">    </span><span class="nx">Payload</span><span class="w">   </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;payload&quot;`</span>
+<span class="p">}</span>
 
-// Error represents error information in the response
-type Error struct {
-    Code    string      `json:&quot;code&quot;`
-    Message string      `json:&quot;message&quot;`
-    Details interface{} `json:&quot;details,omitempty&quot;`
-}
+<span class="c1">// Error represents error information in the response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">Error</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Code</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;code&quot;`</span>
+<span class="w">    </span><span class="nx">Message</span><span class="w"> </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;message&quot;`</span>
+<span class="w">    </span><span class="nx">Details</span><span class="w"> </span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;details,omitempty&quot;`</span>
+<span class="p">}</span>
 
-// ResponseEnvelope represents the JSON contract response
-type ResponseEnvelope struct {
-    RequestID string      `json:&quot;request_id&quot;`
-    Module    string      `json:&quot;module&quot;`
-    Version   string      `json:&quot;version&quot;`
-    Status    string      `json:&quot;status&quot;`
-    Data      interface{} `json:&quot;data,omitempty&quot;`
-    Error     *Error      `json:&quot;error,omitempty&quot;`
-}
+<span class="c1">// ResponseEnvelope represents the JSON contract response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">RequestID</span><span class="w"> </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;request_id&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w">   </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="w">    </span><span class="nx">Status</span><span class="w">    </span><span class="kt">string</span><span class="w">      </span><span class="s">`json:&quot;status&quot;`</span>
+<span class="w">    </span><span class="nx">Data</span><span class="w">      </span><span class="kd">interface</span><span class="p">{}</span><span class="w"> </span><span class="s">`json:&quot;data,omitempty&quot;`</span>
+<span class="w">    </span><span class="nx">Error</span><span class="w">     </span><span class="o">*</span><span class="nx">Error</span><span class="w">      </span><span class="s">`json:&quot;error,omitempty&quot;`</span>
+<span class="p">}</span>
 
-// HealthResponse represents the health check response
-type HealthResponse struct {
-    Status  string `json:&quot;status&quot;`
-    Module  string `json:&quot;module&quot;`
-    Version string `json:&quot;version&quot;`
-}
+<span class="c1">// HealthResponse represents the health check response</span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">HealthResponse</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Status</span><span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;status&quot;`</span>
+<span class="w">    </span><span class="nx">Module</span><span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;module&quot;`</span>
+<span class="w">    </span><span class="nx">Version</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;version&quot;`</span>
+<span class="p">}</span>
 
-// Module configuration
-const (
-    ModuleName    = &quot;uppercase&quot;
-    ModuleVersion = &quot;1.0.0&quot;
-    ModulePort    = &quot;8082&quot;
-)
+<span class="c1">// Module configuration</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="nx">ModuleName</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;uppercase&quot;</span>
+<span class="w">    </span><span class="nx">ModuleVersion</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span>
+<span class="w">    </span><span class="nx">ModulePort</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;8082&quot;</span>
+<span class="p">)</span>
 
-func main() {
-    http.HandleFunc(&quot;/uppercase&quot;, handleRequest)
-    http.HandleFunc(&quot;/health&quot;, handleHealth)
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&quot;/uppercase&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleRequest</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&quot;/health&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleHealth</span><span class="p">)</span>
 
-    log.Printf(&quot;Starting %s module on port %s&quot;, ModuleName, ModulePort)
-    log.Printf(&quot;Module: %s, Version: %s&quot;, ModuleName, ModuleVersion)
+<span class="w">    </span><span class="nx">log</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Starting %s module on port %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">ModuleName</span><span class="p">,</span><span class="w"> </span><span class="nx">ModulePort</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">log</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Module: %s, Version: %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">ModuleName</span><span class="p">,</span><span class="w"> </span><span class="nx">ModuleVersion</span><span class="p">)</span>
 
-    log.Fatal(http.ListenAndServe(&quot;:&quot;+ModulePort, nil))
-}
+<span class="w">    </span><span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">ListenAndServe</span><span class="p">(</span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="nx">ModulePort</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">))</span>
+<span class="p">}</span>
 
-func handleHealth(w http.ResponseWriter, r *http.Request) {
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    json.NewEncoder(w).Encode(HealthResponse{
-        Status:  &quot;ok&quot;,
-        Module:  ModuleName,
-        Version: ModuleVersion,
-    })
-}
+<span class="kd">func</span><span class="w"> </span><span class="nx">handleHealth</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">HealthResponse</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">  </span><span class="s">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">  </span><span class="nx">ModuleName</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w"> </span><span class="nx">ModuleVersion</span><span class="p">,</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="p">}</span>
 
-func handleRequest(w http.ResponseWriter, r *http.Request) {
-    var req RequestEnvelope
-    if err := json.NewDecoder(r.Body).Decode(&amp;req); err != nil {
-        sendError(w, req.RequestID, &quot;INVALID_JSON&quot;, &quot;malformed json&quot;, nil)
-        return
-    }
+<span class="kd">func</span><span class="w"> </span><span class="nx">handleRequest</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="nx">RequestEnvelope</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewDecoder</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">Body</span><span class="p">).</span><span class="nx">Decode</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">req</span><span class="p">);</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;INVALID_JSON&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;malformed json&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Get the text from payload
-    text, ok := req.Payload[&quot;text&quot;].(string)
-    if !ok || text == &quot;&quot; {
-        sendError(w, req.RequestID, &quot;EMPTY_INPUT&quot;, &quot;field 'text' is required&quot;, nil)
-        return
-    }
+<span class="w">    </span><span class="c1">// Get the text from payload</span>
+<span class="w">    </span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">ok</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">Payload</span><span class="p">[</span><span class="s">&quot;text&quot;</span><span class="p">].(</span><span class="kt">string</span><span class="p">)</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">!</span><span class="nx">ok</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;field &#39;text&#39; is required&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Process: convert to uppercase
-    result := map[string]interface{}{
-        &quot;original&quot;: text,
-        &quot;uppercase&quot;: strings.ToUpper(text),
-    }
+<span class="w">    </span><span class="c1">// Process: convert to uppercase</span>
+<span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}{</span>
+<span class="w">        </span><span class="s">&quot;original&quot;</span><span class="p">:</span><span class="w"> </span><span class="nx">text</span><span class="p">,</span>
+<span class="w">        </span><span class="s">&quot;uppercase&quot;</span><span class="p">:</span><span class="w"> </span><span class="nx">strings</span><span class="p">.</span><span class="nx">ToUpper</span><span class="p">(</span><span class="nx">text</span><span class="p">),</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Send success response
-    resp := ResponseEnvelope{
-        RequestID: req.RequestID,
-        Module:    ModuleName,
-        Version:   ModuleVersion,
-        Status:    &quot;success&quot;,
-        Data:      result,
-        Error:     nil,
-    }
+<span class="w">    </span><span class="c1">// Send success response</span>
+<span class="w">    </span><span class="nx">resp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">RequestID</span><span class="p">:</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">RequestID</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">    </span><span class="nx">ModuleName</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w">   </span><span class="nx">ModuleVersion</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Data</span><span class="p">:</span><span class="w">      </span><span class="nx">result</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Error</span><span class="p">:</span><span class="w">     </span><span class="kc">nil</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}</span>
 
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    json.NewEncoder(w).Encode(resp)
-}
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span>
+<span class="p">}</span>
 
-func sendError(w http.ResponseWriter, requestID, code, message string, details interface{}) {
-    resp := ResponseEnvelope{
-        RequestID: requestID,
-        Module:    ModuleName,
-        Version:   ModuleVersion,
-        Status:    &quot;error&quot;,
-        Data:      nil,
-        Error:     &amp;Error{Code: code, Message: message, Details: details},
-    }
-    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
-    w.WriteHeader(http.StatusBadRequest)
-    json.NewEncoder(w).Encode(resp)
-}
-</code></pre>
+<span class="kd">func</span><span class="w"> </span><span class="nx">sendError</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">requestID</span><span class="p">,</span><span class="w"> </span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">details</span><span class="w"> </span><span class="kd">interface</span><span class="p">{})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">resp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">ResponseEnvelope</span><span class="p">{</span>
+<span class="w">        </span><span class="nx">RequestID</span><span class="p">:</span><span class="w"> </span><span class="nx">requestID</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Module</span><span class="p">:</span><span class="w">    </span><span class="nx">ModuleName</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Version</span><span class="p">:</span><span class="w">   </span><span class="nx">ModuleVersion</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Status</span><span class="p">:</span><span class="w">    </span><span class="s">&quot;error&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Data</span><span class="p">:</span><span class="w">      </span><span class="kc">nil</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">Error</span><span class="p">:</span><span class="w">     </span><span class="o">&amp;</span><span class="nx">Error</span><span class="p">{</span><span class="nx">Code</span><span class="p">:</span><span class="w"> </span><span class="nx">code</span><span class="p">,</span><span class="w"> </span><span class="nx">Message</span><span class="p">:</span><span class="w"> </span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">Details</span><span class="p">:</span><span class="w"> </span><span class="nx">details</span><span class="p">},</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">WriteHeader</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusBadRequest</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">json</span><span class="p">.</span><span class="nx">NewEncoder</span><span class="p">(</span><span class="nx">w</span><span class="p">).</span><span class="nx">Encode</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h4 id="4-build-and-run">4. Build and run<a class="headerlink" href="#4-build-and-run" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">go run main.go
-</code></pre>
+<div class="codehilite"><pre><span></span><code>go<span class="w"> </span>run<span class="w"> </span>main.go
+</code></pre></div>
+
 <p>The module will start on <code>http://localhost:8082</code>.</p>
 <hr />
 <h3 id="option-b-python-module">Option B: Python Module<a class="headerlink" href="#option-b-python-module" title="Permanent link">&para;</a></h3>
 <p>Use Flask or FastAPI for Python modules.</p>
 <h4 id="1-create-the-module-directory_1">1. Create the module directory<a class="headerlink" href="#1-create-the-module-directory_1" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">mkdir -p modules/your_module
-cd modules/your_module
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>modules/your_module
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+</code></pre></div>
+
 <h4 id="2-create-requirementstxt">2. Create requirements.txt<a class="headerlink" href="#2-create-requirementstxt" title="Permanent link">&para;</a></h4>
-<pre><code class="language-text">flask&gt;=2.3.0
-</code></pre>
+<div class="codehilite"><pre><span></span><code>flask&gt;=2.3.0
+</code></pre></div>
+
 <h4 id="3-create-the-main-implementation_1">3. Create the main implementation<a class="headerlink" href="#3-create-the-main-implementation_1" title="Permanent link">&para;</a></h4>
-<pre><code class="language-python"># main.py
-from flask import Flask, request, jsonify
-from pydantic import BaseModel, Field
-from typing import Optional, Any
-import uuid
+<div class="codehilite"><pre><span></span><code><span class="c1"># main.py</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Any</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-# Request/Response Models
-class RequestEnvelope(BaseModel):
-    request_id: str = &quot;&quot;
-    module: str
-    version: str
-    payload: dict[str, Any]
+<span class="c1"># Request/Response Models</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RequestEnvelope</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">module</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">payload</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
 
-class ErrorInfo(BaseModel):
-    code: str
-    message: str
-    details: Optional[dict[str, Any]] = None
+<span class="k">class</span><span class="w"> </span><span class="nc">ErrorInfo</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">code</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">message</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">details</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
 
-class ResponseEnvelope(BaseModel):
-    request_id: str
-    module: str
-    version: str
-    status: str
-    data: Optional[Any] = None
-    error: Optional[ErrorInfo] = None
+<span class="k">class</span><span class="w"> </span><span class="nc">ResponseEnvelope</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">module</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">status</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">error</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ErrorInfo</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 
-# Module configuration
-MODULE_NAME = &quot;uppercase&quot;
-MODULE_VERSION = &quot;1.0.0&quot;
-MODULE_PORT = 8082
+<span class="c1"># Module configuration</span>
+<span class="n">MODULE_NAME</span> <span class="o">=</span> <span class="s2">&quot;uppercase&quot;</span>
+<span class="n">MODULE_VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.0.0&quot;</span>
+<span class="n">MODULE_PORT</span> <span class="o">=</span> <span class="mi">8082</span>
 
-@app.route('/health')
-def health():
-    return jsonify({
-        &quot;status&quot;: &quot;ok&quot;,
-        &quot;module&quot;: MODULE_NAME,
-        &quot;version&quot;: MODULE_VERSION
-    })
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/health&#39;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">health</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;module&quot;</span><span class="p">:</span> <span class="n">MODULE_NAME</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="n">MODULE_VERSION</span>
+    <span class="p">})</span>
 
-@app.route('/uppercase', methods=['POST'])
-def handle_request():
-    try:
-        data = request.json
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/uppercase&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">handle_request</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span>
 
-        # Parse request
-        req = RequestEnvelope(**data)
+        <span class="c1"># Parse request</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">RequestEnvelope</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">)</span>
 
-        # Get the text from payload
-        text = req.payload.get(&quot;text&quot;, &quot;&quot;)
-        if not text:
-            return jsonify(create_error_response(
-                req.request_id or str(uuid.uuid4()),
-                &quot;EMPTY_INPUT&quot;,
-                &quot;field 'text' is required&quot;
-            )), 400
+        <span class="c1"># Get the text from payload</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">create_error_response</span><span class="p">(</span>
+                <span class="n">req</span><span class="o">.</span><span class="n">request_id</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+                <span class="s2">&quot;EMPTY_INPUT&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;field &#39;text&#39; is required&quot;</span>
+            <span class="p">)),</span> <span class="mi">400</span>
 
-        # Process: convert to uppercase
-        result = {
-            &quot;original&quot;: text,
-            &quot;uppercase&quot;: text.upper()
-        }
+        <span class="c1"># Process: convert to uppercase</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;original&quot;</span><span class="p">:</span> <span class="n">text</span><span class="p">,</span>
+            <span class="s2">&quot;uppercase&quot;</span><span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="p">}</span>
 
-        # Return success response
-        return jsonify(create_success_response(
-            req.request_id or str(uuid.uuid4()),
-            result
-        ))
+        <span class="c1"># Return success response</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">create_success_response</span><span class="p">(</span>
+            <span class="n">req</span><span class="o">.</span><span class="n">request_id</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+            <span class="n">result</span>
+        <span class="p">))</span>
 
-    except Exception as e:
-        return jsonify(create_error_response(
-            str(uuid.uuid4()),
-            &quot;PROCESSING_ERROR&quot;,
-            str(e)
-        )), 500
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">create_error_response</span><span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+            <span class="s2">&quot;PROCESSING_ERROR&quot;</span><span class="p">,</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="p">)),</span> <span class="mi">500</span>
 
-def create_success_response(request_id: str, data: Any) -&gt; dict:
-    return {
-        &quot;request_id&quot;: request_id,
-        &quot;module&quot;: MODULE_NAME,
-        &quot;version&quot;: MODULE_VERSION,
-        &quot;status&quot;: &quot;success&quot;,
-        &quot;data&quot;: data,
-        &quot;error&quot;: None
-    }
+<span class="k">def</span><span class="w"> </span><span class="nf">create_success_response</span><span class="p">(</span><span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;request_id&quot;</span><span class="p">:</span> <span class="n">request_id</span><span class="p">,</span>
+        <span class="s2">&quot;module&quot;</span><span class="p">:</span> <span class="n">MODULE_NAME</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="n">MODULE_VERSION</span><span class="p">,</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span>
+        <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
 
-def create_error_response(request_id: str, code: str, message: str, details: dict = None) -&gt; dict:
-    return {
-        &quot;request_id&quot;: request_id,
-        &quot;module&quot;: MODULE_NAME,
-        &quot;version&quot;: MODULE_VERSION,
-        &quot;status&quot;: &quot;error&quot;,
-        &quot;data&quot;: None,
-        &quot;error&quot;: {
-            &quot;code&quot;: code,
-            &quot;message&quot;: message,
-            &quot;details&quot;: details
-        }
-    }
+<span class="k">def</span><span class="w"> </span><span class="nf">create_error_response</span><span class="p">(</span><span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;request_id&quot;</span><span class="p">:</span> <span class="n">request_id</span><span class="p">,</span>
+        <span class="s2">&quot;module&quot;</span><span class="p">:</span> <span class="n">MODULE_NAME</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="n">MODULE_VERSION</span><span class="p">,</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span>
+            <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span>
+            <span class="s2">&quot;details&quot;</span><span class="p">:</span> <span class="n">details</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-if __name__ == '__main__':
-    print(f&quot;Starting {MODULE_NAME} module on port {MODULE_PORT}&quot;)
-    print(f&quot;Module: {MODULE_NAME}, Version: {MODULE_VERSION}&quot;)
-    app.run(host=&quot;0.0.0.0&quot;, port=MODULE_PORT)
-</code></pre>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Starting </span><span class="si">{</span><span class="n">MODULE_NAME</span><span class="si">}</span><span class="s2"> module on port </span><span class="si">{</span><span class="n">MODULE_PORT</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Module: </span><span class="si">{</span><span class="n">MODULE_NAME</span><span class="si">}</span><span class="s2">, Version: </span><span class="si">{</span><span class="n">MODULE_VERSION</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">MODULE_PORT</span><span class="p">)</span>
+</code></pre></div>
+
 <h4 id="4-install-dependencies-and-run">4. Install dependencies and run<a class="headerlink" href="#4-install-dependencies-and-run" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">pip install -r requirements.txt
-python main.py
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+python<span class="w"> </span>main.py
+</code></pre></div>
+
 <p>The module will start on <code>http://localhost:8082</code>.</p>
 <hr />
 <h3 id="option-c-nodejs-module">Option C: Node.js Module<a class="headerlink" href="#option-c-nodejs-module" title="Permanent link">&para;</a></h3>
 <h4 id="1-create-the-module-directory_2">1. Create the module directory<a class="headerlink" href="#1-create-the-module-directory_2" title="Permanent link">&para;</a></h4>
-<pre><code class="language-bash">mkdir -p modules/your_module
-cd modules/your_module
-npm init -y
-npm install express
-</code></pre>
+<div class="codehilite"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>modules/your_module
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+npm<span class="w"> </span>init<span class="w"> </span>-y
+npm<span class="w"> </span>install<span class="w"> </span>express
+</code></pre></div>
+
 <h4 id="2-create-the-main-implementation">2. Create the main implementation<a class="headerlink" href="#2-create-the-main-implementation" title="Permanent link">&para;</a></h4>
-<pre><code class="language-javascript">// main.js
-const express = require('express');
-const { v4: uuidv4 } = require('uuid');
+<div class="codehilite"><pre><span></span><code><span class="c1">// main.js</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">express</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">v4</span><span class="o">:</span><span class="w"> </span><span class="nx">uuidv4</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;uuid&#39;</span><span class="p">);</span>
 
-const app = express();
-app.use(express.json());
+<span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">express</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
 
-// Module configuration
-const MODULE_NAME = 'uppercase';
-const MODULE_VERSION = '1.0.0';
-const MODULE_PORT = 8082;
+<span class="c1">// Module configuration</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">MODULE_NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;uppercase&#39;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">MODULE_VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;1.0.0&#39;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">MODULE_PORT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">8082</span><span class="p">;</span>
 
-// Health endpoint
-app.get('/health', (req, res) =&gt; {
-    res.json({
-        status: 'ok',
-        module: MODULE_NAME,
-        version: MODULE_VERSION
-    });
-});
+<span class="c1">// Health endpoint</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/health&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ok&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">module</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_NAME</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_VERSION</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
 
-// Main endpoint
-app.post('/uppercase', (req, res) =&gt; {
-    const { request_id, module, version, payload } = req.body;
+<span class="c1">// Main endpoint</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;/uppercase&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">request_id</span><span class="p">,</span><span class="w"> </span><span class="nx">module</span><span class="p">,</span><span class="w"> </span><span class="nx">version</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">;</span>
 
-    // Get the text from payload
-    const text = payload?.text;
-    if (!text) {
-        return res.status(400).json({
-            request_id: request_id || uuidv4(),
-            module: MODULE_NAME,
-            version: MODULE_VERSION,
-            status: 'error',
-            data: null,
-            error: {
-                code: 'EMPTY_INPUT',
-                message: &quot;field 'text' is required&quot;
-            }
-        });
-    }
+<span class="w">    </span><span class="c1">// Get the text from payload</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">payload</span><span class="o">?</span><span class="p">.</span><span class="nx">text</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mf">400</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+<span class="w">            </span><span class="nx">request_id</span><span class="o">:</span><span class="w"> </span><span class="nx">request_id</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">uuidv4</span><span class="p">(),</span>
+<span class="w">            </span><span class="nx">module</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_NAME</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_VERSION</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;error&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nx">code</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;EMPTY_INPUT&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;field &#39;text&#39; is required&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Process: convert to uppercase
-    const result = {
-        original: text,
-        uppercase: text.toUpperCase()
-    };
+<span class="w">    </span><span class="c1">// Process: convert to uppercase</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">original</span><span class="o">:</span><span class="w"> </span><span class="nx">text</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">uppercase</span><span class="o">:</span><span class="w"> </span><span class="nx">text</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span>
+<span class="w">    </span><span class="p">};</span>
 
-    // Return success response
-    res.json({
-        request_id: request_id || uuidv4(),
-        module: MODULE_NAME,
-        version: MODULE_VERSION,
-        status: 'success',
-        data: result,
-        error: null
-    });
-});
+<span class="w">    </span><span class="c1">// Return success response</span>
+<span class="w">    </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">request_id</span><span class="o">:</span><span class="w"> </span><span class="nx">request_id</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">uuidv4</span><span class="p">(),</span>
+<span class="w">        </span><span class="nx">module</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_NAME</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="nx">MODULE_VERSION</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;success&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">result</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
 
-app.listen(MODULE_PORT, () =&gt; {
-    console.log(`Starting ${MODULE_NAME} module on port ${MODULE_PORT}`);
-    console.log(`Module: ${MODULE_NAME}, Version: ${MODULE_VERSION}`);
-});
-</code></pre>
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">MODULE_PORT</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Starting </span><span class="si">${</span><span class="nx">MODULE_NAME</span><span class="si">}</span><span class="sb"> module on port </span><span class="si">${</span><span class="nx">MODULE_PORT</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Module: </span><span class="si">${</span><span class="nx">MODULE_NAME</span><span class="si">}</span><span class="sb">, Version: </span><span class="si">${</span><span class="nx">MODULE_VERSION</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+
 <hr />
 <h2 id="step-2-implement-the-json-contract">Step 2: Implement the JSON Contract<a class="headerlink" href="#step-2-implement-the-json-contract" title="Permanent link">&para;</a></h2>
 <p>Every module must implement the JSON contract. Here's a detailed breakdown:</p>
 <h3 id="request-format">Request Format<a class="headerlink" href="#request-format" title="Permanent link">&para;</a></h3>
 <p>The module receives requests in this format:</p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;uppercase&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;payload&quot;: {
-    &quot;text&quot;: &quot;hello world&quot;
-  }
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uppercase&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hello world&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="response-format">Response Format<a class="headerlink" href="#response-format" title="Permanent link">&para;</a></h3>
 <p>The module must return responses in this format:</p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
-  &quot;module&quot;: &quot;uppercase&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;original&quot;: &quot;hello world&quot;,
-    &quot;uppercase&quot;: &quot;HELLO WORLD&quot;
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;550e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uppercase&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;original&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hello world&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;uppercase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HELLO WORLD&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="required-endpoints">Required Endpoints<a class="headerlink" href="#required-endpoints" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -752,41 +809,43 @@ app.listen(MODULE_PORT, () =&gt; {
 <p>The gateway validates requests against payload schemas. This provides better error messages and type safety.</p>
 <h3 id="create-the-schema-file">Create the Schema File<a class="headerlink" href="#create-the-schema-file" title="Permanent link">&para;</a></h3>
 <p>Create <code>gateway/schemas/modules/uppercase.py</code>:</p>
-<pre><code class="language-python">from pydantic import BaseModel, Field
-from typing import Optional
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
 
 
-class UppercasePayload(BaseModel):
-    &quot;&quot;&quot;Payload schema for the uppercase module.&quot;&quot;&quot;
-    text: str = Field(..., description=&quot;The text to convert to uppercase&quot;)
-    preserve_spaces: bool = Field(
-        default=True, 
-        description=&quot;Whether to preserve spaces in the text&quot;
-    )
-</code></pre>
+<span class="k">class</span><span class="w"> </span><span class="nc">UppercasePayload</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Payload schema for the uppercase module.&quot;&quot;&quot;</span>
+    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The text to convert to uppercase&quot;</span><span class="p">)</span>
+    <span class="n">preserve_spaces</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Whether to preserve spaces in the text&quot;</span>
+    <span class="p">)</span>
+</code></pre></div>
+
 <h3 id="register-the-schema">Register the Schema<a class="headerlink" href="#register-the-schema" title="Permanent link">&para;</a></h3>
 <p>Edit <code>gateway/schemas/modules/__init__.py</code>:</p>
-<pre><code class="language-python">from pydantic import BaseModel
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
 
-from gateway.schemas.modules.sort import SortPayload
-from gateway.schemas.modules.uppercase import UppercasePayload  # Add this
-
-
-MODULE_PAYLOAD_SCHEMAS: dict[str, type[BaseModel]] = {
-    &quot;sort&quot;: SortPayload,
-    &quot;uppercase&quot;: UppercasePayload,  # Add this
-}
+<span class="kn">from</span><span class="w"> </span><span class="nn">gateway.schemas.modules.sort</span><span class="w"> </span><span class="kn">import</span> <span class="n">SortPayload</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">gateway.schemas.modules.uppercase</span><span class="w"> </span><span class="kn">import</span> <span class="n">UppercasePayload</span>  <span class="c1"># Add this</span>
 
 
-def get_payload_schema(module_name: str) -&gt; type[BaseModel] | None:
-    &quot;&quot;&quot;Get the payload schema for a module.&quot;&quot;&quot;
-    return MODULE_PAYLOAD_SCHEMAS.get(module_name)
+<span class="n">MODULE_PAYLOAD_SCHEMAS</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="n">SortPayload</span><span class="p">,</span>
+    <span class="s2">&quot;uppercase&quot;</span><span class="p">:</span> <span class="n">UppercasePayload</span><span class="p">,</span>  <span class="c1"># Add this</span>
+<span class="p">}</span>
 
 
-def list_module_payload_schemas() -&gt; dict[str, type[BaseModel]]:
-    &quot;&quot;&quot;List all available module payload schemas.&quot;&quot;&quot;
-    return MODULE_PAYLOAD_SCHEMAS.copy()
-</code></pre>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_payload_schema</span><span class="p">(</span><span class="n">module_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the payload schema for a module.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">MODULE_PAYLOAD_SCHEMAS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">module_name</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">list_module_payload_schemas</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;List all available module payload schemas.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">MODULE_PAYLOAD_SCHEMAS</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</code></pre></div>
+
 <h3 id="schema-field-types">Schema Field Types<a class="headerlink" href="#schema-field-types" title="Permanent link">&para;</a></h3>
 <p>Use Pydantic fields to define your schema:</p>
 <table>
@@ -842,318 +901,341 @@ def list_module_payload_schemas() -&gt; dict[str, type[BaseModel]]:
 </table>
 <h3 id="field-validation">Field Validation<a class="headerlink" href="#field-validation" title="Permanent link">&para;</a></h3>
 <p>Pydantic provides built-in validation:</p>
-<pre><code class="language-python">from pydantic import BaseModel, Field, field_validator
-from typing import List
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">field_validator</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 
-class MyPayload(BaseModel):
-    # Required field
-    name: str = Field(..., description=&quot;User's name&quot;)
+<span class="k">class</span><span class="w"> </span><span class="nc">MyPayload</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="c1"># Required field</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;User&#39;s name&quot;</span><span class="p">)</span>
 
-    # Field with default
-    age: int = Field(default=0, description=&quot;User's age&quot;)
+    <span class="c1"># Field with default</span>
+    <span class="n">age</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;User&#39;s age&quot;</span><span class="p">)</span>
 
-    # Field with constraints
-    email: str = Field(..., description=&quot;User's email&quot;)
+    <span class="c1"># Field with constraints</span>
+    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;User&#39;s email&quot;</span><span class="p">)</span>
 
-    # List with item type
-    tags: List[str] = Field(default_factory=list, description=&quot;Tags&quot;)
+    <span class="c1"># List with item type</span>
+    <span class="n">tags</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Tags&quot;</span><span class="p">)</span>
 
-    # Custom validation
-    @field_validator('email')
-    @classmethod
-    def validate_email(cls, v: str) -&gt; str:
-        if '@' not in v:
-            raise ValueError('Invalid email address')
-        return v
-</code></pre>
+    <span class="c1"># Custom validation</span>
+    <span class="nd">@field_validator</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">validate_email</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">&#39;@&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Invalid email address&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">v</span>
+</code></pre></div>
+
 <hr />
 <h2 id="step-4-register-the-module">Step 4: Register the Module<a class="headerlink" href="#step-4-register-the-module" title="Permanent link">&para;</a></h2>
 <p>Now register the module with the gateway configuration.</p>
 <h3 id="edit-gateway-configuration">Edit Gateway Configuration<a class="headerlink" href="#edit-gateway-configuration" title="Permanent link">&para;</a></h3>
 <p>Edit <code>gateway/config.py</code>:</p>
-<pre><code class="language-python">import os
-from typing import Any, Type
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Type</span>
 
-from pydantic import BaseModel
-
-
-class ModuleDefinition:
-    &quot;&quot;&quot;Definition of a module including its configuration and payload schema.&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        name: str,
-        language: str,
-        port: str,
-        url: str,
-        description: str,
-        version: str,
-        paths: list[str],
-        payload_schema: Type[BaseModel] | None = None,
-    ):
-        self.name = name
-        self.language = language
-        self.port = port
-        self.url = url
-        self.description = description
-        self.version = version
-        self.paths = paths
-        self.payload_schema = payload_schema
-
-    def to_dict(self) -&gt; dict[str, Any]:
-        &quot;&quot;&quot;Convert to dictionary representation.&quot;&quot;&quot;
-        return {
-            &quot;name&quot;: self.name,
-            &quot;language&quot;: self.language,
-            &quot;port&quot;: self.port,
-            &quot;url&quot;: self.url,
-            &quot;description&quot;: self.description,
-            &quot;version&quot;: self.version,
-            &quot;paths&quot;: self.paths,
-        }
+<span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
 
 
-def _import_payload_schema(module_name: str) -&gt; Type[BaseModel] | None:
-    &quot;&quot;&quot;Dynamically import the payload schema for a module.&quot;&quot;&quot;
-    try:
-        from gateway.schemas.modules import get_payload_schema
+<span class="k">class</span><span class="w"> </span><span class="nc">ModuleDefinition</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Definition of a module including its configuration and payload schema.&quot;&quot;&quot;</span>
 
-        return get_payload_schema(module_name)
-    except ImportError:
-        return None
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">language</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">port</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">version</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">paths</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+        <span class="n">payload_schema</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">language</span> <span class="o">=</span> <span class="n">language</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="n">version</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">paths</span> <span class="o">=</span> <span class="n">paths</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">payload_schema</span> <span class="o">=</span> <span class="n">payload_schema</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Convert to dictionary representation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">language</span><span class="p">,</span>
+            <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">,</span>
+            <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+            <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">description</span><span class="p">,</span>
+            <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
+            <span class="s2">&quot;paths&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">paths</span><span class="p">,</span>
+        <span class="p">}</span>
 
 
-SERVICES: dict[str, ModuleDefinition] = {
-    &quot;sort&quot;: ModuleDefinition(
-        name=&quot;sort&quot;,
-        language=&quot;Go&quot;,
-        port=&quot;8081&quot;,
-        url=os.getenv(&quot;SORT_MODULE_URL&quot;, &quot;http://localhost:8081&quot;),
-        description=&quot;String and number sorting microservice&quot;,
-        version=&quot;1.0.0&quot;,
-        paths=[&quot;/sort&quot;],
-        payload_schema=_import_payload_schema(&quot;sort&quot;),
-    ),
-    # Add your new module here
-    &quot;uppercase&quot;: ModuleDefinition(
-        name=&quot;uppercase&quot;,
-        language=&quot;Go&quot;,
-        port=&quot;8082&quot;,
-        url=os.getenv(&quot;UPPERCASE_MODULE_URL&quot;, &quot;http://localhost:8082&quot;),
-        description=&quot;Text uppercase conversion microservice&quot;,
-        version=&quot;1.0.0&quot;,
-        paths=[&quot;/uppercase&quot;],
-        payload_schema=_import_payload_schema(&quot;uppercase&quot;),
-    ),
-}
-</code></pre>
+<span class="k">def</span><span class="w"> </span><span class="nf">_import_payload_schema</span><span class="p">(</span><span class="n">module_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Dynamically import the payload schema for a module.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">gateway.schemas.modules</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_payload_schema</span>
+
+        <span class="k">return</span> <span class="n">get_payload_schema</span><span class="p">(</span><span class="n">module_name</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="n">SERVICES</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">ModuleDefinition</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="n">ModuleDefinition</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;sort&quot;</span><span class="p">,</span>
+        <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Go&quot;</span><span class="p">,</span>
+        <span class="n">port</span><span class="o">=</span><span class="s2">&quot;8081&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;SORT_MODULE_URL&quot;</span><span class="p">,</span> <span class="s2">&quot;http://localhost:8081&quot;</span><span class="p">),</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;String and number sorting microservice&quot;</span><span class="p">,</span>
+        <span class="n">version</span><span class="o">=</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="n">paths</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;/sort&quot;</span><span class="p">],</span>
+        <span class="n">payload_schema</span><span class="o">=</span><span class="n">_import_payload_schema</span><span class="p">(</span><span class="s2">&quot;sort&quot;</span><span class="p">),</span>
+    <span class="p">),</span>
+    <span class="c1"># Add your new module here</span>
+    <span class="s2">&quot;uppercase&quot;</span><span class="p">:</span> <span class="n">ModuleDefinition</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;uppercase&quot;</span><span class="p">,</span>
+        <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Go&quot;</span><span class="p">,</span>
+        <span class="n">port</span><span class="o">=</span><span class="s2">&quot;8082&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;UPPERCASE_MODULE_URL&quot;</span><span class="p">,</span> <span class="s2">&quot;http://localhost:8082&quot;</span><span class="p">),</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Text uppercase conversion microservice&quot;</span><span class="p">,</span>
+        <span class="n">version</span><span class="o">=</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+        <span class="n">paths</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;/uppercase&quot;</span><span class="p">],</span>
+        <span class="n">payload_schema</span><span class="o">=</span><span class="n">_import_payload_schema</span><span class="p">(</span><span class="s2">&quot;uppercase&quot;</span><span class="p">),</span>
+    <span class="p">),</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="step-5-test-your-module">Step 5: Test Your Module<a class="headerlink" href="#step-5-test-your-module" title="Permanent link">&para;</a></h2>
 <h3 id="start-the-module">Start the Module<a class="headerlink" href="#start-the-module" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash"># For Go
-cd modules/your_module
-go run main.go
+<div class="codehilite"><pre><span></span><code><span class="c1"># For Go</span>
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+go<span class="w"> </span>run<span class="w"> </span>main.go
 
-# For Python
-cd modules/your_module
-python main.py
+<span class="c1"># For Python</span>
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+python<span class="w"> </span>main.py
 
-# For Node.js
-cd modules/your_module
-node main.js
-</code></pre>
+<span class="c1"># For Node.js</span>
+<span class="nb">cd</span><span class="w"> </span>modules/your_module
+node<span class="w"> </span>main.js
+</code></pre></div>
+
 <h3 id="start-the-gateway">Start the Gateway<a class="headerlink" href="#start-the-gateway" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">cd gateway
-uvicorn main:app --reload --port 8000
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>gateway
+uvicorn<span class="w"> </span>main:app<span class="w"> </span>--reload<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
+</code></pre></div>
+
 <h3 id="test-the-endpoint">Test the Endpoint<a class="headerlink" href="#test-the-endpoint" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash"># Test successful request
-curl -X POST http://localhost:8000/uppercase \
-  -H &quot;Content-Type: application/json&quot; \
-  -d '{&quot;payload&quot;: {&quot;text&quot;: &quot;hello world&quot;}}'
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Test successful request</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/uppercase<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;payload&quot;: {&quot;text&quot;: &quot;hello world&quot;}}&#39;</span>
+</code></pre></div>
+
 <p>Expected response:</p>
-<pre><code class="language-json">{
-  &quot;request_id&quot;: &quot;...&quot;,
-  &quot;module&quot;: &quot;uppercase&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;status&quot;: &quot;success&quot;,
-  &quot;data&quot;: {
-    &quot;original&quot;: &quot;hello world&quot;,
-    &quot;uppercase&quot;: &quot;HELLO WORLD&quot;
-  },
-  &quot;error&quot;: null
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uppercase&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;original&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hello world&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;uppercase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HELLO WORLD&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="test-error-handling">Test Error Handling<a class="headerlink" href="#test-error-handling" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash"># Test missing required field
-curl -X POST http://localhost:8000/uppercase \
-  -H &quot;Content-Type: application/json&quot; \
-  -d '{&quot;payload&quot;: {}}'
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Test missing required field</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/uppercase<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;payload&quot;: {}}&#39;</span>
+</code></pre></div>
+
 <p>Expected response (from gateway validation):</p>
-<pre><code class="language-json">{
-  &quot;detail&quot;: [
-    {
-      &quot;type&quot;: &quot;missing&quot;,
-      &quot;loc&quot;: [&quot;payload&quot;, &quot;text&quot;],
-      &quot;msg&quot;: &quot;Field required&quot;,
-      &quot;input&quot;: {}
-    }
-  ]
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;missing&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;loc&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;payload&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Field required&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="test-health-check">Test Health Check<a class="headerlink" href="#test-health-check" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">curl http://localhost:8082/health
-</code></pre>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>http://localhost:8082/health
+</code></pre></div>
+
 <p>Expected response:</p>
-<pre><code class="language-json">{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;module&quot;: &quot;uppercase&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uppercase&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="docker-support">Docker Support<a class="headerlink" href="#docker-support" title="Permanent link">&para;</a></h2>
 <h3 id="dockerfile-for-go-module">Dockerfile for Go Module<a class="headerlink" href="#dockerfile-for-go-module" title="Permanent link">&para;</a></h3>
-<pre><code class="language-dockerfile"># Build stage
-FROM golang:1.21-alpine AS builder
-WORKDIR /app
-COPY . .
-RUN go build -o server .
+<div class="codehilite"><pre><span></span><code><span class="c"># Build stage</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.21-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>-o<span class="w"> </span>server<span class="w"> </span>.
 
-# Runtime stage
-FROM alpine:latest
-WORKDIR /app
-COPY --from=builder /app/server .
-EXPOSE 8082
-CMD [&quot;./server&quot;]
-</code></pre>
+<span class="c"># Runtime stage</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/app/server<span class="w"> </span>.
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8082</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;./server&quot;</span><span class="p">]</span>
+</code></pre></div>
+
 <h3 id="dockerfile-for-python-module">Dockerfile for Python Module<a class="headerlink" href="#dockerfile-for-python-module" title="Permanent link">&para;</a></h3>
-<pre><code class="language-dockerfile">FROM python:3.12-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-EXPOSE 8082
-CMD [&quot;python&quot;, &quot;main.py&quot;]
-</code></pre>
-<h3 id="build-and-run">Build and Run<a class="headerlink" href="#build-and-run" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash"># Build
-docker build -t polyapi/uppercase .
+<div class="codehilite"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.12-slim</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>.
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8082</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;main.py&quot;</span><span class="p">]</span>
+</code></pre></div>
 
-# Run
-docker run -p 8082:8082 polyapi/uppercase
-</code></pre>
+<h3 id="build-and-run">Build and Run<a class="headerlink" href="#build-and-run" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Build</span>
+docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>polyapi/uppercase<span class="w"> </span>.
+
+<span class="c1"># Run</span>
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8082</span>:8082<span class="w"> </span>polyapi/uppercase
+</code></pre></div>
+
 <h3 id="using-docker-compose">Using Docker Compose<a class="headerlink" href="#using-docker-compose" title="Permanent link">&para;</a></h3>
 <p>Add to <code>docker-compose.yml</code>:</p>
-<pre><code class="language-yaml">services:
-  uppercase:
-    build: ./modules/your_module
-    ports:
-      - &quot;8082:8082&quot;
-    environment:
-      - MODULE_NAME=uppercase
-      - MODULE_VERSION=1.0.0
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">uppercase</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./modules/your_module</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8082:8082&quot;</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MODULE_NAME=uppercase</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MODULE_VERSION=1.0.0</span>
+</code></pre></div>
+
 <hr />
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <h3 id="1-input-validation">1. Input Validation<a class="headerlink" href="#1-input-validation" title="Permanent link">&para;</a></h3>
 <p>Always validate input, even if the gateway does validation:</p>
-<pre><code class="language-go">// Go example
-func validatePayload(payload map[string]interface{}) error {
-    text, ok := payload[&quot;text&quot;].(string)
-    if !ok || text == &quot;&quot; {
-        return errors.New(&quot;field 'text' is required&quot;)
-    }
-    if len(text) &gt; 1000 {
-        return errors.New(&quot;text exceeds maximum length of 1000 characters&quot;)
-    }
-    return nil
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="c1">// Go example</span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">validatePayload</span><span class="p">(</span><span class="nx">payload</span><span class="w"> </span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{})</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">text</span><span class="p">,</span><span class="w"> </span><span class="nx">ok</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">payload</span><span class="p">[</span><span class="s">&quot;text&quot;</span><span class="p">].(</span><span class="kt">string</span><span class="p">)</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">!</span><span class="nx">ok</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">errors</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="s">&quot;field &#39;text&#39; is required&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">errors</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="s">&quot;text exceeds maximum length of 1000 characters&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">nil</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="2-structured-logging">2. Structured Logging<a class="headerlink" href="#2-structured-logging" title="Permanent link">&para;</a></h3>
 <p>Use structured logging for better debugging:</p>
-<pre><code class="language-python">import logging
-import json
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-logger.info(&quot;request_processed&quot;, extra={
-    &quot;request_id&quot;: request_id,
-    &quot;module&quot;: MODULE_NAME,
-    &quot;processing_time_ms&quot;: elapsed_ms
-})
-</code></pre>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;request_processed&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span>
+    <span class="s2">&quot;request_id&quot;</span><span class="p">:</span> <span class="n">request_id</span><span class="p">,</span>
+    <span class="s2">&quot;module&quot;</span><span class="p">:</span> <span class="n">MODULE_NAME</span><span class="p">,</span>
+    <span class="s2">&quot;processing_time_ms&quot;</span><span class="p">:</span> <span class="n">elapsed_ms</span>
+<span class="p">})</span>
+</code></pre></div>
+
 <h3 id="3-graceful-shutdown">3. Graceful Shutdown<a class="headerlink" href="#3-graceful-shutdown" title="Permanent link">&para;</a></h3>
 <p>Handle shutdown signals properly:</p>
-<pre><code class="language-go">// Go example
-func main() {
-    go func() {
-        sigCh := make(chan os.Signal, 1)
-        signal.Notify(sigCh, os.Interrupt, syscall.SIGTERM)
-        &lt;-sigCh
-        log.Println(&quot;Shutting down...&quot;)
-        // Cleanup
-        os.Exit(0)
-    }()
+<div class="codehilite"><pre><span></span><code><span class="c1">// Go example</span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sigCh</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span><span class="w"> </span><span class="nx">os</span><span class="p">.</span><span class="nx">Signal</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">signal</span><span class="p">.</span><span class="nx">Notify</span><span class="p">(</span><span class="nx">sigCh</span><span class="p">,</span><span class="w"> </span><span class="nx">os</span><span class="p">.</span><span class="nx">Interrupt</span><span class="p">,</span><span class="w"> </span><span class="nx">syscall</span><span class="p">.</span><span class="nx">SIGTERM</span><span class="p">)</span>
+<span class="w">        </span><span class="o">&lt;-</span><span class="nx">sigCh</span>
+<span class="w">        </span><span class="nx">log</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Shutting down...&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Cleanup</span>
+<span class="w">        </span><span class="nx">os</span><span class="p">.</span><span class="nx">Exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}()</span>
 
-    // Start server
-}
-</code></pre>
+<span class="w">    </span><span class="c1">// Start server</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="4-timeouts">4. Timeouts<a class="headerlink" href="#4-timeouts" title="Permanent link">&para;</a></h3>
 <p>Set appropriate timeouts:</p>
-<pre><code class="language-python"># Python example
-import httpx
+<div class="codehilite"><pre><span></span><code><span class="c1"># Python example</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
 
-async with httpx.AsyncClient(timeout=30.0) as client:
-    response = await client.post(url, json=data)
-</code></pre>
+<span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mf">30.0</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
 <h3 id="5-rate-limiting">5. Rate Limiting<a class="headerlink" href="#5-rate-limiting" title="Permanent link">&para;</a></h3>
 <p>Consider implementing rate limiting in your module:</p>
-<pre><code class="language-go">// Go example with simple rate limiting
-var requests = make(chan time.Time, 100) // 100 requests per second
+<div class="codehilite"><pre><span></span><code><span class="c1">// Go example with simple rate limiting</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">requests</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Time</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="c1">// 100 requests per second</span>
 
-func init() {
-    go func() {
-        for {
-            &lt;-time.Tick(time.Second / 100)
-        }
-    }()
-}
+<span class="kd">func</span><span class="w"> </span><span class="nx">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">&lt;-</span><span class="nx">time</span><span class="p">.</span><span class="nx">Tick</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}()</span>
+<span class="p">}</span>
 
-func rateLimit(next http.HandlerFunc) http.HandlerFunc {
-    return func(w http.ResponseWriter, r *http.Request) {
-        select {
-        case requests &lt;- time.Now():
-            next(w, r)
-        default:
-            http.Error(w, &quot;rate limit exceeded&quot;, http.StatusTooManyRequests)
-        }
-    }
-}
-</code></pre>
+<span class="kd">func</span><span class="w"> </span><span class="nx">rateLimit</span><span class="p">(</span><span class="nx">next</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandlerFunc</span><span class="p">)</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">HandlerFunc</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="nx">requests</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">():</span>
+<span class="w">            </span><span class="nx">next</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="p">)</span>
+<span class="w">        </span><span class="k">default</span><span class="p">:</span>
+<span class="w">            </span><span class="nx">http</span><span class="p">.</span><span class="nx">Error</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rate limit exceeded&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusTooManyRequests</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="module-not-reachable">Module Not Reachable<a class="headerlink" href="#module-not-reachable" title="Permanent link">&para;</a></h3>
-<pre><code>ERROR: Exception in ASGI application
-httpx.ConnectError: [Errno 111] Connection refused
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">ERROR</span><span class="o">:</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">ASGI</span><span class="w"> </span><span class="n">application</span>
+<span class="n">httpx</span><span class="o">.</span><span class="na">ConnectError</span><span class="o">:</span><span class="w"> </span><span class="o">[</span><span class="n">Errno</span><span class="w"> </span><span class="mi">111</span><span class="o">]</span><span class="w"> </span><span class="n">Connection</span><span class="w"> </span><span class="n">refused</span>
+</code></pre></div>
+
 <p><strong>Solution</strong>: Ensure your module is running and the port is correct.</p>
 <h3 id="invalid-json-response">Invalid JSON Response<a class="headerlink" href="#invalid-json-response" title="Permanent link">&para;</a></h3>
-<pre><code>pydantic_core._pydantic_core.ValidationError: 1 validation error for ResponseEnvelope
-</code></pre>
+<div class="codehilite"><pre><span></span><code>pydantic_core._pydantic_core.ValidationError: 1 validation error for ResponseEnvelope
+</code></pre></div>
+
 <p><strong>Solution</strong>: Ensure your module returns valid JSON matching the ResponseEnvelope schema.</p>
 <h3 id="404-not-found">404 Not Found<a class="headerlink" href="#404-not-found" title="Permanent link">&para;</a></h3>
-<pre><code>INFO: 172.24.0.1:56048 - &quot;POST /uppercase HTTP/1.1&quot; 404 Not Found
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">INFO</span><span class="o">:</span><span class="w"> </span><span class="mf">172.24</span><span class="o">.</span><span class="mf">0.1</span><span class="o">:</span><span class="mi">56048</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="s2">&quot;POST /uppercase HTTP/1.1&quot;</span><span class="w"> </span><span class="mi">404</span><span class="w"> </span><span class="n">Not</span><span class="w"> </span><span class="n">Found</span>
+</code></pre></div>
+
 <p><strong>Solution</strong>: 
 1. Check that the module path matches the gateway configuration
 2. Verify the module endpoint is registered correctly</p>
 <h3 id="payload-validation-error">Payload Validation Error<a class="headerlink" href="#payload-validation-error" title="Permanent link">&para;</a></h3>
-<pre><code>Input should be a valid dictionary
-</code></pre>
+<div class="codehilite"><pre><span></span><code>Input should be a valid dictionary
+</code></pre></div>
+
 <p><strong>Solution</strong>: Ensure the gateway payload schema is properly registered and the request format is correct.</p>
 <hr />
 <h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">&para;</a></h2>
@@ -1163,60 +1245,113 @@ httpx.ConnectError: [Errno 111] Connection refused
 <li><a href="../../gateway/configuration/">Gateway Configuration</a> - Configure modules</li>
 <li><a href="../overview/">Modules Overview</a> - Module architecture</li>
 <li><a href="../sort/">Sort Module</a> - Example module implementation</li>
-</ul></p>
-    </article>
-</section>
-<!-- endblock -->
-                
-                
-            </main>
+</ul></div>
+        
+        
+    </div>
 
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright &copy; 2026 PolyAPI</small><br>
             
-                    <!-- block preview -->
-    <div class="preview row row-cols-md-3 text-center pt-md-3" id="component-preview">
-        <div class="col themed-grid-col">
-            <a rel="prev" href="../overview/" class="nav-link">
-                <i class="fa fa-arrow-left"></i> Previous
-            </a>
-        </div>
-        <div class="col themed-grid-col"></div>
-        <div class="col themed-grid-col">
-            <a rel="next" href="../sort/" class="nav-link">
-                Next <i class="fa fa-arrow-right"></i>
-            </a>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/go.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/bash.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/json.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-<!-- endblock -->
-            
-
-            
-                    <!-- block footer -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
-    <div class="row">
-        <div class="col-12 col-md">
-                <!-- block copyright -->
-    <small class="d-block mb-3">Copyright &copy; 2026 PolyAPI</small>
-
-    <small class="d-block mb-3">
-        Made with
-        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
-            Simple Blog for MkDocs
-        </a>
-    </small>
-
-<!-- endblock -->
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-</footer>
-<!-- endblock -->
-            
-        </div>
-
-            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
-            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
-            <script src="../../assets/js/main.min.js""></script>
-                <script src="../../search/main.js" defer></script>
-
+</div>
     </body>
 
 </html>

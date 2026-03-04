@@ -1,280 +1,306 @@
-<!doctype html>
-<html data-bs-theme="">
-    <head>
-                <title>Contributing Guide - PolyAPI Documentation</title>
+<!DOCTYPE html>
+<html lang="en">
 
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polyglot Microservices API Gateway - A clean, responsive theme for static documentation">
+    <meta name="author" content="PolyAPI Team">
+    <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/CONTRIBUTING/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
 
-            
-            <link rel="canonical" href="https://librecourseuy.github.io/PolyAPI/CONTRIBUTING/">
-            <meta name="author" content="PolyAPI Team">
-
-            
-                <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
-            
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-                <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/grayscale-dark.min.css">
-                <script>hljs.highlightAll();</script>
-
-        <script>var base_url = '..';</script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="../assets/css/root.min.css">
-            <link rel="stylesheet" href="../assets/css/main.min.css">
-            <link rel="stylesheet" href="../assets/css/media.min.css">
-            <link rel="stylesheet" href="../assets/css/mkdocstrings.min.css">
-                <script src="../search/main.js"></script>
-
-            
-                
-            
-          
-    </head>
-
-    <body>
-        <div class="container py-3">
-            <header>
-                    <!-- block header -->
-<nav class="navbar navbar-expand-xl border-bottom">
-    <div class="container-fluid">
-        
-
-        
-            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">PolyAPI Documentation</span>
-        
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
-
-                <!-- block menu -->
-                <li class="nav-item">
-                    <!-- block menu -->
     
-        <li class="nav-item" id="component-menu">
-            <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="..">[Home]</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Getting Started]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../getting-started/installation/" class="dropdown-item text-decoration-none ">Installation</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../getting-started/quickstart/" class="dropdown-item text-decoration-none ">Quick Start</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../getting-started/architecture/" class="dropdown-item text-decoration-none ">Architecture Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Gateway]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../gateway/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../gateway/configuration/" class="dropdown-item text-decoration-none ">Configuration</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../gateway/api/" class="dropdown-item text-decoration-none ">API Reference</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Modules]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../modules/overview/" class="dropdown-item text-decoration-none ">Overview</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../modules/creating/" class="dropdown-item text-decoration-none ">Creating a Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../modules/sort/" class="dropdown-item text-decoration-none ">Sort Module</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../my-first-module/" class="dropdown-item text-decoration-none ">My First Module</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Contract]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../contract/json-contract/" class="dropdown-item text-decoration-none ">JSON Contract</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../contract/error-codes/" class="dropdown-item text-decoration-none ">Error Codes</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../CONTRACT/" class="dropdown-item text-decoration-none ">Contract Overview</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class=" active 
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Development]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../development/contributing/" class="dropdown-item text-decoration-none ">Contributing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../development/testing/" class="dropdown-item text-decoration-none ">Testing</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../ARCHITECTURE/" class="dropdown-item text-decoration-none ">Architecture</a>
-    </li>
-<!-- endblock -->
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="./" class="dropdown-item text-decoration-none  active ">Contributing Guide</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="
-                            nav-link text-gray text-decoration-none" href="../CLA/">[CLA]</a>
-                        </li>
-            </ul>
-        </li>
-<!-- endblock -->
-                </li>
-                <!-- endblock -->
+    <title>Contributing Guide - PolyAPI Documentation</title>
+    
 
-                <!-- block search -->
-                <li class="nav-item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <div class="md-search-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </li>
-                <!--  endblock -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
 
-                <!-- block source -->
-                <li class="nav-item">
-                    
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/monokai.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">PolyAPI Documentation</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                         
-                            <!-- block source -->
-<div class="md-source source-detail">
-  <div class="md-source-repo-icon">
-    <i class="fa fa-github-alt" aria-hidden="true"></i>
-  </div>
+                            
+<li >
+    <a href="../getting-started/installation/">Installation</a>
+</li>
 
-  <div class="md-source-repo-url">
-    <a href="https://github.com/LibreCourseUY/PolyAPI" class="md-source">
-        LibreCourseUY/PolyAPI
-    </a>
-
-    <ul class="md-source-repo-text">
-      <li>
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        <img
-          alt="GitHub tag (latest by date)"
-          src="https://img.shields.io/github/v/tag/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <img
-          alt="GitHub Repo stars"
-          src="https://img.shields.io/github/stars/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-
-      <li>
-        <i class="fa fa-code-fork" aria-hidden="true"></i>
-        <img
-          alt="GitHub forks"
-          src="https://img.shields.io/github/forks/LibreCourseUY/PolyAPI?color=white&label=%20&style=flat-square"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-<!--  endblock -->
                         
-                    
-                </li>
-                <!--  endblock -->
+                            
+<li >
+    <a href="../getting-started/quickstart/">Quick Start</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../getting-started/architecture/">Architecture Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gateway <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../gateway/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../gateway/configuration/">Configuration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../gateway/api/">API Reference</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../modules/overview/">Overview</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../modules/creating/">Creating a Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../modules/sort/">Sort Module</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../my-first-module/">My First Module</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contract <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../contract/json-contract/">JSON Contract</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../contract/error-codes/">Error Codes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../CONTRACT/">Contract Overview</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../development/contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../development/testing/">Testing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ARCHITECTURE/">Architecture</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Contributing Guide</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../CLA/">CLA</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../ARCHITECTURE/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../CLA/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LibreCourseUY/PolyAPI/edit/master/docs/CONTRIBUTING.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
             </ul>
         </div>
     </div>
-</nav>
-<!--  endblock -->
-            </header>
-
-            <main><!-- block search -->
-<div class="collapse" id="collapseExample">
-    <div role="search" class="search-box">
-        <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-            <input type="text" name="q" class="search-query"
-            placeholder="Search docs" title="Type search term here" />
-        </form>
-    </div>
 </div>
-<!-- endblock -->
 
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#contributing-to-polyapi">Contributing to PolyAPI</a></li>
+            <li class="second-level"><a href="#table-of-contents">Table of Contents</a></li>
                 
-                        <!-- block content -->
-<section class="container post" id="component-content">
-    <article>
-        <header>
-            
-                <h1 class=" title" id="component-title">Contributing Guide</h1>
-            
-        </header>
-        <p><h1 id="contributing-to-polyapi">Contributing to PolyAPI<a class="headerlink" href="#contributing-to-polyapi" title="Permanent link">&para;</a></h1>
+            <li class="second-level"><a href="#architecture-overview">Architecture Overview</a></li>
+                
+            <li class="second-level"><a href="#adding-a-new-module">Adding a New Module</a></li>
+                
+                <li class="third-level"><a href="#step-1-create-the-module-directory">Step 1: Create the Module Directory</a></li>
+                <li class="third-level"><a href="#step-2-implement-the-json-contract">Step 2: Implement the JSON Contract</a></li>
+                <li class="third-level"><a href="#step-3-implement-health-endpoint">Step 3: Implement Health Endpoint</a></li>
+                <li class="third-level"><a href="#step-4-create-dockerfile">Step 4: Create Dockerfile</a></li>
+                <li class="third-level"><a href="#step-5-register-in-gateway-configuration">Step 5: Register in Gateway Configuration</a></li>
+                <li class="third-level"><a href="#step-6-update-docker-compose">Step 6: Update Docker Compose</a></li>
+                <li class="third-level"><a href="#step-7-write-documentation">Step 7: Write Documentation</a></li>
+            <li class="second-level"><a href="#module-requirements">Module Requirements</a></li>
+                
+                <li class="third-level"><a href="#must-have">Must Have</a></li>
+                <li class="third-level"><a href="#should-have">Should Have</a></li>
+                <li class="third-level"><a href="#nice-to-have">Nice to Have</a></li>
+            <li class="second-level"><a href="#docker-networking">Docker Networking</a></li>
+                
+                <li class="third-level"><a href="#internal-network">Internal Network</a></li>
+                <li class="third-level"><a href="#module-communication">Module Communication</a></li>
+            <li class="second-level"><a href="#code-style">Code Style</a></li>
+                
+                <li class="third-level"><a href="#go">Go</a></li>
+                <li class="third-level"><a href="#python">Python</a></li>
+                <li class="third-level"><a href="#general">General</a></li>
+            <li class="second-level"><a href="#testing">Testing</a></li>
+                
+                <li class="third-level"><a href="#local-testing">Local Testing</a></li>
+                <li class="third-level"><a href="#manual-testing">Manual Testing</a></li>
+            <li class="second-level"><a href="#pr-checklist">PR Checklist</a></li>
+                
+            <li class="second-level"><a href="#cla-requirement">CLA Requirement</a></li>
+                
+            <li class="second-level"><a href="#getting-help">Getting Help</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="contributing-to-polyapi">Contributing to PolyAPI<a class="headerlink" href="#contributing-to-polyapi" title="Permanent link">&para;</a></h1>
 <p>Thank you for your interest in contributing to PolyAPI! This guide will help you understand how to add new modules and contribute to the project.</p>
 <h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ol>
@@ -294,19 +320,21 @@
 <li><strong>Modules</strong>: Individual services written in any language. Communicate exclusively via JSON over HTTP.</li>
 <li><strong>Network</strong>: All inter-module communication happens through an internal Docker network (<code>polyapi-net</code>).</li>
 </ul>
-<pre><code>Client → Gateway (port 8000) → Modules (internal network)
-</code></pre>
+<div class="codehilite"><pre><span></span><code>Client → Gateway (port 8000) → Modules (internal network)
+</code></pre></div>
+
 <h2 id="adding-a-new-module">Adding a New Module<a class="headerlink" href="#adding-a-new-module" title="Permanent link">&para;</a></h2>
 <p>Adding a new module to PolyAPI involves several steps:</p>
 <h3 id="step-1-create-the-module-directory">Step 1: Create the Module Directory<a class="headerlink" href="#step-1-create-the-module-directory" title="Permanent link">&para;</a></h3>
 <p>Create a new directory under <code>modules/</code> with your module name:</p>
-<pre><code>modules/
-└── mymodule/
-    ├── main.go        # or main.rs, main.ts, etc.
-    ├── handler.go     # or equivalent
-    ├── Dockerfile
-    └── go.mod         # or package.json, Cargo.toml, etc.
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">modules</span><span class="o">/</span>
+<span class="err">└──</span><span class="w"> </span><span class="nx">mymodule</span><span class="o">/</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="nx">go</span><span class="w">        </span><span class="err">#</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="nx">rs</span><span class="p">,</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="nx">ts</span><span class="p">,</span><span class="w"> </span><span class="nx">etc</span><span class="p">.</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="nx">handler</span><span class="p">.</span><span class="nx">go</span><span class="w">     </span><span class="err">#</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">equivalent</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="nx">Dockerfile</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="nx">go</span><span class="p">.</span><span class="nx">mod</span><span class="w">         </span><span class="err">#</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="kn">package</span><span class="p">.</span><span class="nx">json</span><span class="p">,</span><span class="w"> </span><span class="nx">Cargo</span><span class="p">.</span><span class="nx">toml</span><span class="p">,</span><span class="w"> </span><span class="nx">etc</span><span class="p">.</span>
+</code></pre></div>
+
 <h3 id="step-2-implement-the-json-contract">Step 2: Implement the JSON Contract<a class="headerlink" href="#step-2-implement-the-json-contract" title="Permanent link">&para;</a></h3>
 <p>Your module must implement the JSON contract as defined in <a href="../CONTRACT/">CONTRACT.md</a>:</p>
 <ul>
@@ -317,15 +345,16 @@
 </ul>
 <h3 id="step-3-implement-health-endpoint">Step 3: Implement Health Endpoint<a class="headerlink" href="#step-3-implement-health-endpoint" title="Permanent link">&para;</a></h3>
 <p>Add a health check endpoint:</p>
-<pre><code class="language-json">GET /health
+<div class="codehilite"><pre><span></span><code><span class="err">GET</span><span class="w"> </span><span class="err">/heal</span><span class="kc">t</span><span class="err">h</span>
 
-Response:
-{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;module&quot;: &quot;mymodule&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;
-}
-</code></pre>
+<span class="err">Respo</span><span class="kc">nse</span><span class="p">:</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mymodule&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="step-4-create-dockerfile">Step 4: Create Dockerfile<a class="headerlink" href="#step-4-create-dockerfile" title="Permanent link">&para;</a></h3>
 <p>Every module <strong>must</strong> have a Dockerfile. The Dockerfile should:</p>
 <ul>
@@ -334,19 +363,20 @@ Response:
 <li>Be built as part of the orchestrator docker-compose</li>
 </ul>
 <p>Example:</p>
-<pre><code class="language-dockerfile">FROM golang:1.21-alpine AS builder
+<div class="codehilite"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.21-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
 
-WORKDIR /app
-COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -o /mymodule
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<span class="k">RUN</span><span class="w"> </span><span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="nv">GOOS</span><span class="o">=</span>linux<span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>-o<span class="w"> </span>/mymodule
 
-FROM alpine:latest
-RUN apk --no-cache add ca-certificates
-WORKDIR /app
-COPY --from=builder /mymodule .
-EXPOSE 8082
-CMD [&quot;./mymodule&quot;]
-</code></pre>
+<span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span>
+<span class="k">RUN</span><span class="w"> </span>apk<span class="w"> </span>--no-cache<span class="w"> </span>add<span class="w"> </span>ca-certificates
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/mymodule<span class="w"> </span>.
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8082</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;./mymodule&quot;</span><span class="p">]</span>
+</code></pre></div>
+
 <h3 id="step-5-register-in-gateway-configuration">Step 5: Register in Gateway Configuration<a class="headerlink" href="#step-5-register-in-gateway-configuration" title="Permanent link">&para;</a></h3>
 <p>Update the gateway configuration to include your module:</p>
 <ol>
@@ -371,34 +401,36 @@ CMD [&quot;./mymodule&quot;]
 </ol>
 <h3 id="step-6-update-docker-compose">Step 6: Update Docker Compose<a class="headerlink" href="#step-6-update-docker-compose" title="Permanent link">&para;</a></h3>
 <p>Add your module to <code>docker-compose.yml</code>:</p>
-<pre><code class="language-yaml">services:
-  gateway:
-    # ... existing config
-    environment:
-      - MYMODULE_URL=http://mymodule:8082
+<div class="codehilite"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">gateway</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># ... existing config</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYMODULE_URL=http://mymodule:8082</span>
 
-  mymodule:
-    build:
-      context: ./modules/mymodule
-      dockerfile: Dockerfile
-    container_name: polyapi-mymodule
-    environment:
-      - PORT=8082
-    volumes:
-      - mymodule-data:/app/data
-    networks:
-      - polyapi-net
-    restart: unless-stopped
+<span class="w">  </span><span class="nt">mymodule</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./modules/mymodule</span>
+<span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dockerfile</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">polyapi-mymodule</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PORT=8082</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mymodule-data:/app/data</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">polyapi-net</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
 
-volumes:
-  mymodule-data:
-    name: polyapi-mymodule-data
-</code></pre>
+<span class="nt">volumes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mymodule-data</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">polyapi-mymodule-data</span>
+</code></pre></div>
+
 <h3 id="step-7-write-documentation">Step 7: Write Documentation<a class="headerlink" href="#step-7-write-documentation" title="Permanent link">&para;</a></h3>
 <p>Create documentation in <code>docs/modules/</code>:</p>
-<pre><code class="language-markdown">docs/modules/
+<div class="codehilite"><pre><span></span><code>docs/modules/
 └── mymodule.md
-</code></pre>
+</code></pre></div>
+
 <p>Include:
 - Module description
 - API reference (endpoints, request/response schemas)
@@ -407,31 +439,31 @@ volumes:
 - Implementation notes</p>
 <h2 id="module-requirements">Module Requirements<a class="headerlink" href="#module-requirements" title="Permanent link">&para;</a></h2>
 <h3 id="must-have">Must Have<a class="headerlink" href="#must-have" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> JSON contract compliance (request/response envelopes)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Health endpoint (<code>GET /health</code>)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Proper error handling with contract error codes</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Environment-based configuration (no hardcoded URLs/ports)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Dockerfile</strong> for containerization</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Named volume</strong> for data persistence (e.g., <code>mymodule-data:/app/data</code>)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Module documentation</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Registered in <code>gateway/config.py</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Route added in <code>gateway/router/routes.py</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Service added to <code>docker-compose.yml</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Communicates via HTTP + JSON over internal Docker network</li>
+<ul>
+<li>[ ] JSON contract compliance (request/response envelopes)</li>
+<li>[ ] Health endpoint (<code>GET /health</code>)</li>
+<li>[ ] Proper error handling with contract error codes</li>
+<li>[ ] Environment-based configuration (no hardcoded URLs/ports)</li>
+<li>[ ] <strong>Dockerfile</strong> for containerization</li>
+<li>[ ] <strong>Named volume</strong> for data persistence (e.g., <code>mymodule-data:/app/data</code>)</li>
+<li>[ ] Module documentation</li>
+<li>[ ] Registered in <code>gateway/config.py</code></li>
+<li>[ ] Route added in <code>gateway/router/routes.py</code></li>
+<li>[ ] Service added to <code>docker-compose.yml</code></li>
+<li>[ ] Communicates via HTTP + JSON over internal Docker network</li>
 </ul>
 <h3 id="should-have">Should Have<a class="headerlink" href="#should-have" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Unit tests</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Input validation</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Logging</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Graceful shutdown</li>
+<ul>
+<li>[ ] Unit tests</li>
+<li>[ ] Input validation</li>
+<li>[ ] Logging</li>
+<li>[ ] Graceful shutdown</li>
 </ul>
 <h3 id="nice-to-have">Nice to Have<a class="headerlink" href="#nice-to-have" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Metrics endpoint</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> OpenAPI/Swagger documentation</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Rate limiting</li>
+<ul>
+<li>[ ] Metrics endpoint</li>
+<li>[ ] OpenAPI/Swagger documentation</li>
+<li>[ ] Rate limiting</li>
 </ul>
 <h2 id="docker-networking">Docker Networking<a class="headerlink" href="#docker-networking" title="Permanent link">&para;</a></h2>
 <h3 id="internal-network">Internal Network<a class="headerlink" href="#internal-network" title="Permanent link">&para;</a></h3>
@@ -459,11 +491,12 @@ volumes:
 <li>Run <code>golint</code> if available</li>
 </ul>
 <p>Example:</p>
-<pre><code class="language-go">// HandleSort processes the sort request.
-func HandleSort(w http.ResponseWriter, r *http.Request) {
-    // implementation
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="c1">// HandleSort processes the sort request.</span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">HandleSort</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// implementation</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Follow PEP 8 style guide</li>
@@ -472,17 +505,18 @@ func HandleSort(w http.ResponseWriter, r *http.Request) {
 <li>Run <code>ruff check</code> for linting</li>
 </ul>
 <p>Example:</p>
-<pre><code class="language-python">async def sort_items(request: Request) -&gt; ResponseEnvelope:
-    &quot;&quot;&quot;Sort items via the sort module.
+<div class="codehilite"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">sort_items</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ResponseEnvelope</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Sort items via the sort module.</span>
 
-    Args:
-        request: The incoming HTTP request with sort payload.
+<span class="sd">    Args:</span>
+<span class="sd">        request: The incoming HTTP request with sort payload.</span>
 
-    Returns:
-        ResponseEnvelope with sorted items or error.
-    &quot;&quot;&quot;
-    pass
-</code></pre>
+<span class="sd">    Returns:</span>
+<span class="sd">        ResponseEnvelope with sorted items or error.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</code></pre></div>
+
 <h3 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Use meaningful variable and function names</li>
@@ -492,39 +526,41 @@ func HandleSort(w http.ResponseWriter, r *http.Request) {
 </ul>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <h3 id="local-testing">Local Testing<a class="headerlink" href="#local-testing" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash"># Build and start services
-make up
+<div class="codehilite"><pre><span></span><code><span class="c1"># Build and start services</span>
+make<span class="w"> </span>up
 
-# Run test suite
-make test
+<span class="c1"># Run test suite</span>
+make<span class="w"> </span><span class="nb">test</span>
 
-# View logs
-make logs
-</code></pre>
+<span class="c1"># View logs</span>
+make<span class="w"> </span>logs
+</code></pre></div>
+
 <h3 id="manual-testing">Manual Testing<a class="headerlink" href="#manual-testing" title="Permanent link">&para;</a></h3>
 <p>Test through the gateway (the only externally accessible service):</p>
-<pre><code class="language-bash"># Test via gateway
-curl -X POST http://localhost:8000/your-endpoint \
-  -H &quot;Content-Type: application/json&quot; \
-  -d '{&quot;payload&quot;: {}}'
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Test via gateway</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/your-endpoint<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;payload&quot;: {}}&#39;</span>
+</code></pre></div>
+
 <h2 id="pr-checklist">PR Checklist<a class="headerlink" href="#pr-checklist" title="Permanent link">&para;</a></h2>
 <p>Before submitting a pull request, ensure:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Code follows the style guide for the relevant language</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> All tests pass (<code>make test</code>)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Linting passes (<code>make lint</code>)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Documentation is updated</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Module works end-to-end with <code>make up</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> No hardcoded URLs or ports</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Error responses follow the contract format</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Commit messages are clear and descriptive</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Service registered in <code>gateway/config.py</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Route added in <code>gateway/router/routes.py</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Module added to <code>docker-compose.yml</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Module Dockerfile exists and is properly configured</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Module does NOT expose external ports (internal network only)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You have read and agree to the <a href="../CLA/">CLA</a></li>
+<ul>
+<li>[ ] Code follows the style guide for the relevant language</li>
+<li>[ ] All tests pass (<code>make test</code>)</li>
+<li>[ ] Linting passes (<code>make lint</code>)</li>
+<li>[ ] Documentation is updated</li>
+<li>[ ] Module works end-to-end with <code>make up</code></li>
+<li>[ ] No hardcoded URLs or ports</li>
+<li>[ ] Error responses follow the contract format</li>
+<li>[ ] Commit messages are clear and descriptive</li>
+<li>[ ] Service registered in <code>gateway/config.py</code></li>
+<li>[ ] Route added in <code>gateway/router/routes.py</code></li>
+<li>[ ] Module added to <code>docker-compose.yml</code></li>
+<li>[ ] Module Dockerfile exists and is properly configured</li>
+<li>[ ] Module does NOT expose external ports (internal network only)</li>
+<li>[ ] You have read and agree to the <a href="../CLA/">CLA</a></li>
 </ul>
 <h2 id="cla-requirement">CLA Requirement<a class="headerlink" href="#cla-requirement" title="Permanent link">&para;</a></h2>
 <p>Before your contribution can be accepted, you must sign the <a href="../CLA/">Contributor License Agreement (CLA)</a>. By submitting a pull request, patch, or other form of contribution to the Project, you agree to be bound by the terms of the CLA.</p>
@@ -534,60 +570,113 @@ curl -X POST http://localhost:8000/your-endpoint \
 <li>Join discussions in the repository</li>
 <li>Check existing issues and PRs before creating new ones</li>
 </ul>
-<p>We look forward to your contributions!</p></p>
-    </article>
-</section>
-<!-- endblock -->
-                
-                
-            </main>
+<p>We look forward to your contributions!</p></div>
+        
+        
+    </div>
 
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright &copy; 2026 PolyAPI</small><br>
             
-                    <!-- block preview -->
-    <div class="preview row row-cols-md-3 text-center pt-md-3" id="component-preview">
-        <div class="col themed-grid-col">
-            <a rel="prev" href="../ARCHITECTURE/" class="nav-link">
-                <i class="fa fa-arrow-left"></i> Previous
-            </a>
-        </div>
-        <div class="col themed-grid-col"></div>
-        <div class="col themed-grid-col">
-            <a rel="next" href="../CLA/" class="nav-link">
-                Next <i class="fa fa-arrow-right"></i>
-            </a>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/go.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/bash.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/json.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-<!-- endblock -->
-            
-
-            
-                    <!-- block footer -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
-    <div class="row">
-        <div class="col-12 col-md">
-                <!-- block copyright -->
-    <small class="d-block mb-3">Copyright &copy; 2026 PolyAPI</small>
-
-    <small class="d-block mb-3">
-        Made with
-        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
-            Simple Blog for MkDocs
-        </a>
-    </small>
-
-<!-- endblock -->
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-</footer>
-<!-- endblock -->
-            
-        </div>
-
-            <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
-            <script src="../assets/js/bootstrap.bundle.min.js""></script>
-            <script src="../assets/js/main.min.js""></script>
-                <script src="../search/main.js" defer></script>
-
+</div>
     </body>
 
 </html>
