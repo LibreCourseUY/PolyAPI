@@ -1,33 +1,31 @@
 site_name: PolyAPI Documentation
 site_description: Polyglot Microservices API Gateway
 site_author: PolyAPI Team
-site_url: https://polyapi.dev
+site_url: https://librecourseuy.github.io/PolyAPI
+repo_url: https://github.com/LibreCourseUY/PolyAPI
 
-docs_dir: .
+docs_dir: ./docs
 
-repo_name: fingdev/PolyAPI
-repo_url: https://github.com/fingdev/PolyAPI
-
-copyright: Copyright &copy; 2024 PolyAPI
+copyright: Copyright &copy; 2026 PolyAPI
 
 theme:
   name: material
   palette:
-    - scheme: default
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
     - scheme: slate
       primary: deep purple
-      accent: blue
+      accent: red
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+    - scheme: slate
+      primary: deep purple
+      accent: red
       toggle:
         icon: material/lightbulb
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
+        name: Switch to dark mode
+      media: "(prefers-color-scheme: dark)"
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.tracking
@@ -40,7 +38,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/fingdev/PolyAPI
+      link: https://github.com/LibreCourseUY/PolyAPI
 
 nav:
   - Home: index.md
@@ -56,12 +54,17 @@ nav:
       - Overview: modules/overview.md
       - Creating a Module: modules/creating.md
       - Sort Module: modules/sort.md
+      - My First Module: my-first-module.md
   - Contract:
       - JSON Contract: contract/json-contract.md
       - Error Codes: contract/error-codes.md
+      - Contract Overview: CONTRACT.md
   - Development:
       - Contributing: development/contributing.md
       - Testing: development/testing.md
+      - Architecture: ARCHITECTURE.md
+      - Contributing Guide: CONTRIBUTING.md
+  - CLA: CLA.md
 
 markdown_extensions:
   - abbr

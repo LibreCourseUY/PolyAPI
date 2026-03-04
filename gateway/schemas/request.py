@@ -1,5 +1,5 @@
-from pydantic import BaseModel, Field
-from typing import Any, Optional, Type, Union
+from pydantic import BaseModel, Field, create_model
+from typing import Any, Optional, Type
 
 
 class GeneralRequest(BaseModel):
@@ -32,15 +32,18 @@ def create_request_model(
     if payload_schema is None:
         return GeneralRequest
 
-    payload_field = Field(..., description="Module-specific payload data")
-
-    class RequestWithSchema(BaseModel):
-        payload: Any = payload_field
-        request_id: Optional[str] = Field(
-            default=None, description="UUID v4 string, auto-generated if not provided"
-        )
-
-        model_config = {"strict": False}
-
-    RequestWithSchema.__name__ = f"{module_name.title()}Request"
-    return RequestWithSchema
+    return create_model(
+        f"{module_name.title()}Request",
+        payload=(
+            payload_schema,
+            Field(..., description="Module-specific payload data"),
+        ),
+        request_id=(
+            Optional[str],
+            Field(
+                default=None,
+                description="UUID v4 string, auto-generated if not provided",
+            ),
+        ),
+        __config__={"strict": False},
+    )
