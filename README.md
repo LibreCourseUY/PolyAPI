@@ -1,7 +1,9 @@
 # PolyAPI: A Polyglot Open Source API
 
 <p align="center">
-  <div>[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/LibrecourseUY/PolyAPI)</div>
+  <a href="https://deepwiki.com/LibreCourseUY/PolyAPI">
+    <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
+  </a>
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
   <img src="https://img.shields.io/badge/Python-FastAPI-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/Go-1.21-blue.svg" alt="Go">
