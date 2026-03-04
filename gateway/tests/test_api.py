@@ -118,7 +118,7 @@ async def test_invalid_json():
             content="not valid json",
             headers={"Content-Type": "application/json"},
         )
-    assert response.status_code == 400
+    assert response.status_code == 422
 
 
 @pytest.mark.asyncio
