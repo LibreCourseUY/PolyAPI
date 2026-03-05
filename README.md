@@ -31,27 +31,27 @@ Python was chosen as the gateway language for several important reasons:
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                        Client                               │
-└─────────────────────┬───────────────────────────────────────┘
-                      │ HTTP + JSON
-                      ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   PolyAPI Gateway (Python)                  │
-│                        :8000                                │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │ /health     │  │ /modules    │  │ /sort (proxy)       │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-└─────────────────────┬───────────────────────────────────────┘
-                      │ HTTP + JSON Contract
-                      ▼
-┌─────────────────────────────────────────────────────────────┐
-│              Sort Module (Go) :8081                         │
-│   ┌─────────────┐   ┌─────────────┐  ┌─────────────────┐    │
-│   │ /health     │   │ /sort       │  | future-modules  │    │
-│   └─────────────┘   └─────────────┘  └─────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph LR
+    Client["Client"]
+
+    Client -- "HTTP + JSON" --> Gateway
+
+    subgraph Gateway["Gateway (Python :8000)"]
+        direction TB
+        gw_health["/health"]
+        gw_modules["/modules"]
+        gw_sort["/sort — proxy"]
+    end
+
+    gw_sort -- "HTTP + JSON Contract" --> sort_endpoint
+
+    subgraph Sort["Sort Module (Go :8081)"]
+        direction TB
+        sort_health["/health"]
+        sort_endpoint["/sort"]
+        sort_future["future modules"]
+    end
 ```
 
 ## Quickstart
